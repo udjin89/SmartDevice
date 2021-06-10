@@ -1,0 +1,18 @@
+//Screen size
+$mobile: 320px;
+$tablet: 767.66px;
+$desktop: 1023.33px;
+
+// Colors
+$white: #ffffff;
+$white-opacity: rgba($color: $white, $alpha: 0.7);
+$black: #000000;
+$special-black: #1f1f1f;
+$light-black: #131314;
+$dark: #161616;
+$green: #0ad9c6;
+$grey: rgba($color: $black, $alpha: 0.5);
+$medium-grey: rgba($color: $black, $alpha: 0.7);
+$special-grey: rgba(#1c1c1c, $alpha: 0.5);
+$dark-grey:#48494d;
+$light-grey: #f6f7f9;

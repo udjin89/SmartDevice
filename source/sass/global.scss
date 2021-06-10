@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+    padding: 0 89px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
+  }
+
+  &--facts {
+    max-width: 1200px;
+  }
+
+  &--types {
+    padding: 0 5px;
+  }
+}
+
+.container-slim {
+  max-width: 880px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.container-special-grid {
+  width: 327px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.page,
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page__body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.overflow {
+  overflow: hidden;
+}

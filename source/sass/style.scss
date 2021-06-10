@@ -1,0 +1,23 @@
+// Начните писать стили здесь
+// переменные, цвета
+@import "variables.scss";
+//
+@import "mixins.scss";
+// подключение шрифтов
+@import "fonts.scss";
+//++++++++ Блоки +++++++++++
+@import "block/header.scss";
+@import "block/facts.scss";
+@import "block/menu.scss";
+@import "block/navigation.scss";
+@import "block/form.scss";
+@import "block/form-request.scss";
+@import "block/toggle.scss";
+@import "block/footer.scss";
+@import "block/logo.scss";
+@import "block/contact.scss";
+@import "block/types.scss";
+@import "block/about.scss";
+
+// глобальные стили
+@import "global.scss";
