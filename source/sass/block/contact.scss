@@ -1,0 +1,29 @@
+.contact{
+    display: flex;
+    align-items: center;
+
+}
+.contact__mail,
+.contact__phone,
+.contact__button{
+    color: $white;
+    text-decoration: none;
+}
+.contact__mail,
+.contact__phone{
+    line-height: 18px;
+}
+.contact__button{
+    font-family: "RobotoCondensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    border: 1px solid $white;
+    border-radius: 5px;
+    padding: 14px 26px;
+}

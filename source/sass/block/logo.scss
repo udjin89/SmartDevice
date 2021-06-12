@@ -1,0 +1,22 @@
+.logo{display: flex;}
+.logo__name-company{
+    width: 160px;
+    &--white{
+        .logo__name{
+            display: block;
+            color: $white;
+            @include title;
+            font-size: 25px;
+            line-height: 29px;
+        }
+        .logo__slogan{
+            // color: $special-grey;
+            color: $white;
+            font-family: "Roboto", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

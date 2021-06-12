@@ -23,24 +23,16 @@ img {
 
 .container {
   position: relative;
-  max-width: 1170px;
+  max-width: 1450px;
   margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
 
   @include tablet {
-    max-width: 768px;
-    padding: 0 89px;
   }
 
   @include mobile {
-    padding: 0 15px;
-  }
 
-  &--facts {
-    max-width: 1200px;
-  }
-
-  &--types {
-    padding: 0 5px;
   }
 }
 
@@ -65,6 +57,7 @@ img {
   min-height: 100%;
   margin: 0;
   padding: 0;
+  @include standart-font;
 }
 
 .page__body {

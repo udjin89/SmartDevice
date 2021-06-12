@@ -1,39 +1,39 @@
-// normal
+// PT MONO - standart font
 @font-face {
-  font-family: "OpenSans";
+  font-family: "PTMono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-regular-webfont.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"),
+    url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
-// Bold
+// RobotoCondensed Bold
 @font-face {
-  font-family: "OpenSans";
+  font-family: "RobotoCondensed";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-bold-webfont.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
 
-// SemiBold
+// RobotoCondensed Regular
 @font-face {
-  font-family: "OpenSans";
+  font-family: "RobotoCondensed";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-display: swap;
-  src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-semibold-webfont.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
-// Light
+// Roboto Medium
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Roboto";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 500;
   font-display: swap;
-  src: url("../fonts/opensans-light-webfont.woff2") format("woff2"),
-    url("../fonts/opensans-light-webfont.woff") format("woff");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
 }

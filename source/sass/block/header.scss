@@ -1,0 +1,38 @@
+.header{
+    min-height: 878px;
+    background-color: $dark-grey;
+
+    background-image: url("../img/background/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    @include retina {
+      background-image: url("../img/background/header@2x.png");
+    }
+    @include tablet {
+      min-height: 0;
+      background-size: 100%;
+    }
+  
+    @include mobile {
+      background-size: 100%;
+  
+
+    }
+
+}
+.header__grid{
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+.header__top{
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__main{
+    margin-top: 50px;
+    background-image: url("../img/background/sheme.png"), url("../img/background/triangle.svg");
+    background-position: right top, right top;
+    background-repeat: no-repeat, no-repeat;
+}

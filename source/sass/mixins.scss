@@ -28,17 +28,19 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-@mixin title {
-  font-family: "OpenSans", "Arial", sans-serif;
+@mixin standart-font{
+  font-family: "PT Mono", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  color: $special-black;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;  
+}
+@mixin title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
 
   @include tablet {
-    font-size: 24px;
-    line-height: 41px;
+
   }
 }
