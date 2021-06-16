@@ -16,6 +16,19 @@
   }
 }
 
+@mixin desktop-background {
+  @media screen and (max-width: $desktop-back) {
+    @content;
+  }
+
+}
+
+@mixin desktop-background-step2 {
+  @media screen and (max-width: $desktop-back-step2) {
+    @content;
+  }
+}
+
 @mixin hidden {
   position: absolute;
   width: 1px;
@@ -28,19 +41,31 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-@mixin standart-font{
-  font-family: "PT Mono", "Arial", sans-serif;
+
+@mixin standart-font {
+  font-family: "PTMono", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;  
+  line-height: 22px;
 }
+
 @mixin title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
 
-  @include tablet {
+  @include tablet {}
+}
 
-  }
+@mixin title-low {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  line-height: 51px;
 }

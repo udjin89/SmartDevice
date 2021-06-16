@@ -2,6 +2,8 @@
 $mobile: 320px;
 $tablet: 767.66px;
 $desktop: 1023.33px;
+$desktop-back: 1440px;
+$desktop-back-step2: 1200px;
 
 // Colors
 $white: #ffffff;
@@ -9,11 +11,12 @@ $white-opacity: rgba($color: $white, $alpha: 0.7);
 $black: #000000;
 $grey: #666666;
 $dark-grey: #1b2d37;
+$special-grey: #788891;
 $blue: #00b2ff;
 
 $dark: #161616;
 $green: #0ad9c6;
 
-$medium-grey: rgba($color: $black, $alpha: 0.7);
-$special-grey: rgba(#1c1c1c, $alpha: 0.5);
+// $medium-grey: rgba($color: $black, $alpha: 0.7);
+// $special-grey: rgba(#1c1c1c, $alpha: 0.5);
 

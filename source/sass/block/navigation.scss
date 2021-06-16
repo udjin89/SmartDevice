@@ -1,0 +1,22 @@
+.navigation{
+    max-width: 657px;
+}
+.navigation__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+
+}
+.navigation__item{
+    // width: 50%;
+}
+.navigation__link{
+    font-size: 15px;
+    line-height: 25px;
+    color: $dark-grey;
+    text-decoration: none;
+    opacity: 0.5;
+}

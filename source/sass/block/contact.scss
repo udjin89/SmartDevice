@@ -11,19 +11,43 @@
 }
 .contact__mail,
 .contact__phone{
+    position: relative;
     line-height: 18px;
+    @include tablet{
+        span{
+            display: none;
+        }
+    }
+    
 }
-.contact__button{
-    font-family: "RobotoCondensed", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-
-    border: 1px solid $white;
-    border-radius: 5px;
-    padding: 14px 26px;
+.contact__icon{
+    position: absolute;
+    left: 0;
+    @include tablet{
+        position: relative;
+    }
+}
+.contact__mail{
+    padding-left: 39px;
+    @include tablet{
+        svg{
+            width: 25px;
+            height: 19px;
+        }
+    }
+}
+.contact__phone{
+    margin-left: 88px;
+    padding-left: 34px;
+    @include tablet{
+        padding-left: 0;
+        margin-left: 33px;
+        svg{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    @include mobile{
+        margin-left: 23px;
+    }
 }

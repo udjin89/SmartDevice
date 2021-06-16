@@ -1,0 +1,85 @@
+.products {
+  padding-top: 93px;
+  padding-bottom: 127px;
+  background-color: $dark-grey;
+
+  @include tablet {
+    padding-top: 53px;
+    padding-bottom: 78px;
+  }
+
+  @include mobile {
+    padding-bottom: 64px;
+  }
+}
+
+.products h2 {
+  @include title-low;
+  color: $white;
+}
+
+.products__list {
+  padding: 0;
+  margin: 0;
+  margin-top: 47px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 370px));
+  gap: 30px;
+  justify-content: center;
+
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.products__link {
+  outline: 2px solid yellowgreen;
+  outline-offset: -2px;
+  position: relative;
+  display: block;
+  height: 620px;
+  color: $white;
+  text-decoration: none;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $blue;
+    background-image: url("../img/icon/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  @include tablet {
+    height: 256px;
+  }
+}
+
+.products__link {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--manufacture {
+    background-image: url("../img/content/manufacture.png");
+
+  }
+
+  &--set {
+    background-image: url("../img/content/set.png");
+  }
+
+  &--components {
+    background-image: url("../img/content/components.png");
+  }
+}

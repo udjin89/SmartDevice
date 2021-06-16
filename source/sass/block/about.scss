@@ -1,0 +1,27 @@
+.about {
+  h2 {
+    @include title-low;
+    color: $grey;
+  }
+
+  p {
+    color: $grey;
+  }
+}
+
+.about__year {
+  @include title;
+  font-size: 156.248px;
+  line-height: 220px;
+
+  background: url("../img/background/about.png") no-repeat center center;
+  // background-size: contain;
+  color: $blue;
+  text-align: center;
+  // padding: 2em;
+  /* -webkit-background-clip обрезает фон элемента по контуру текста */
+  -webkit-text-fill-color: transparent;
+  /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
+  -webkit-background-clip: text;
+  transform: rotate(-90deg);
+}

@@ -1,0 +1,52 @@
+.footer{
+    // background-color: pink;
+}
+.footer__main{
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__wrap{
+    max-width: 422px;
+    .company{
+        display: none;
+    }
+
+}
+.footer__navigation{
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    h3{
+        @include title;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $dark-grey;
+    }
+}
+.footer__bottom{
+    // opacity: 0.2;
+    /* #353735 */
+    
+    border-top: 1px solid rgba(#626962, 0.2);
+    .company,
+    .copyright,
+    .privacy,
+    .developed{
+        font-size: 13px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $dark-grey;
+        opacity: 0.5;
+        text-decoration: none;
+    }
+}
+.footer__bottom-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

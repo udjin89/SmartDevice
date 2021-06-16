@@ -1,0 +1,74 @@
+.button {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $white;
+  text-decoration: none;
+  border: 1px solid $white;
+  border-radius: 5px;
+  padding: 14px 26px;
+}
+
+.button--contact {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 52px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.button--consultation {
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $blue;
+  border: none;
+  padding: 18px 45px;
+  display: inline-block;
+  margin-top: 42px;
+  margin-left: 92px;
+
+  @include tablet {
+    padding: 18px 32px;
+    margin-top: 57px;
+    margin-left: 48px;
+  }
+
+  @include mobile {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.button--scroll {
+  font-family: "PTMono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.5;
+  border: none;
+  display: inline-block;
+  text-align: left;
+  text-transform: none;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 90px;
+
+  @include tablet {
+    display: none;
+  }
+
+}
+
+.button--about {
+  color: $blue;
+  border-color: $blue;
+}

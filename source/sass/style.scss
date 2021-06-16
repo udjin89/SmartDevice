@@ -8,16 +8,16 @@
 //++++++++ Блоки +++++++++++
 @import "block/header.scss";
 @import "block/logo.scss";
-// @import "block/menu.scss";
-// @import "block/navigation.scss";
-// @import "block/form.scss";
-// @import "block/form-request.scss";
-// @import "block/toggle.scss";
-// @import "block/footer.scss";
-// @import "block/logo.scss";
+@import "block/button.scss";
+@import "block/navigation.scss";
+@import "block/contact-footer.scss";
+@import "block/advantages.scss";
+@import "block/products.scss";
+@import "block/footer.scss";
+@import "block/social.scss";
 @import "block/contact.scss";
 // @import "block/types.scss";
-// @import "block/about.scss";
+@import "block/about.scss";
 
 // глобальные стили
 @import "global.scss";

@@ -1,0 +1,16 @@
+.social{
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ display: flex;
+ flex-wrap: wrap;
+}
+.social__item{
+    margin-right: 16px;
+}
+.social__link{
+    display: block;
+    width: 27px;
+    height: 27px;
+
+}

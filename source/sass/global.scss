@@ -29,27 +29,14 @@ img {
   height: 100%;
 
   @include tablet {
+    max-width: 820px;
+    padding: 0 25px;
   }
 
   @include mobile {
-
+    min-width: 320px;
+    padding: 0 15px;
   }
-}
-
-.container-slim {
-  max-width: 880px;
-  margin: 0 auto;
-
-  @include tablet {
-    max-width: 100%;
-    margin: 0;
-  }
-}
-
-.container-special-grid {
-  width: 327px;
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .page,
@@ -69,4 +56,15 @@ img {
 
 .overflow {
   overflow: hidden;
+}
+.mobile-hidden{
+  @include mobile{
+    display: none;
+  }
+}
+.mobile-visible{
+  display: none;
+  @include mobile{
+    display: inline;
+  }
 }
