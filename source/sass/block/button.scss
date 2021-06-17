@@ -10,6 +10,7 @@
   border: 1px solid $white;
   border-radius: 5px;
   padding: 14px 26px;
+  cursor: pointer;
 }
 
 .button--contact {
@@ -69,6 +70,42 @@
 }
 
 .button--about {
+  display: inline-block;
+  margin-top: 46px;
   color: $blue;
   border-color: $blue;
+
+}
+
+.button--close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    height: 16px;
+    width: 1px;
+    background-color: $white;
+  }
+
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.button--submit {
+  width: 100%;
+  background-color: transparent;
 }

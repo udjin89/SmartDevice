@@ -1,44 +1,54 @@
-.logo{
-    display: flex;
-    flex-wrap: wrap;
-    @include mobile{
-        svg{
-            width: 38px;
-            height: 38px;
-        }
-    }
-}
-.logo__name-company{
-    width: 160px;
-    margin-left: 16px;
-    .logo__name{
-        display: block;
-        @include title;
-        font-size: 25px;
-        line-height: 29px;
-        padding-top: 5px;
-    }
-    .logo__slogan{
-        color: $special-grey;
-        font-family: "Roboto", "Arial", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 14px;
-        // margin-top: -15px;
-    }
-    &--white{
-        .logo__name{
-            color: $white;
-        }
+.logo {
+  display: flex;
+  flex-wrap: wrap;
 
+  @include mobile {
+    &--header {
+      svg {
+        width: 38px;
+        height: 38px;
+      }
     }
-    &--grey{
-        .logo__name{
-            color: #203c42;
-        }
+
+  }
+}
+
+.logo__name-company {
+  width: 160px;
+  margin-left: 16px;
+
+  .logo__name {
+    display: block;
+    @include title;
+    font-size: 25px;
+    line-height: 29px;
+    padding-top: 5px;
+  }
+
+  .logo__slogan {
+    color: $special-grey;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    // margin-top: -15px;
+  }
+
+  &--white {
+    .logo__name {
+      color: $white;
     }
-    @include mobile{
-        display: none;
+
+  }
+
+  &--grey {
+    .logo__name {
+      color: #203c42;
     }
+  }
+
+  @include mobile {
+    display: none;
+  }
 }

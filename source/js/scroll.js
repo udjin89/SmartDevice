@@ -5,7 +5,7 @@ if (links) {
     link.addEventListener('click', function (evt) {
       evt.preventDefault();
       const id = link.getAttribute('href');
-      closeMenu();
+      // closeMenu();
       document.querySelector(id).scrollIntoView({
         behavior: 'smooth',
         block: 'start'

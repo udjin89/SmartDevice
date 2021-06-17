@@ -37,6 +37,19 @@ img {
     min-width: 320px;
     padding: 0 15px;
   }
+
+  &--about {
+    // padding-left: 50px;
+    padding-right: 130px;
+
+    @include tablet {
+      padding-right: 25px;
+    }
+
+    @include mobile {
+      padding-right: 15px;
+    }
+  }
 }
 
 .page,
@@ -52,19 +65,23 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+
 }
 
 .overflow {
   overflow: hidden;
 }
-.mobile-hidden{
-  @include mobile{
+
+.mobile-hidden {
+  @include mobile {
     display: none;
   }
 }
-.mobile-visible{
+
+.mobile-visible {
   display: none;
-  @include mobile{
+
+  @include mobile {
     display: inline;
   }
 }

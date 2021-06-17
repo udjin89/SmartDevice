@@ -1,4 +1,8 @@
 .about {
+  position: relative;
+  margin-top: 110px;
+  padding-bottom: 110px;
+
   h2 {
     @include title-low;
     color: $grey;
@@ -6,15 +10,40 @@
 
   p {
     color: $grey;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
+.about__grid {
+  display: flex;
+  padding-right: 119px;
+}
+
+.about__wrap {
+  margin-left: 280px;
+  max-width: 984px;
+
+  @include tablet {
+    margin-left: 185px;
+  }
+
+  @include mobile {
+    margin-left: 0;
   }
 }
 
 .about__year {
+  position: absolute;
   @include title;
+  display: inline-block;
   font-size: 156.248px;
-  line-height: 220px;
+  line-height: 260px;
 
-  background: url("../img/background/about.png") no-repeat center center;
+  background: url("../img/background/about.png");
+  background-repeat: no-repeat;
+  background-position: center;
   // background-size: contain;
   color: $blue;
   text-align: center;
@@ -24,4 +53,32 @@
   /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
   -webkit-background-clip: text;
   transform: rotate(-90deg);
+
+  @include tablet {
+    top: 0;
+    left: -85px;
+    font-size: 178.324px;
+    line-height: 251px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.about {
+
+  .visible-desktop {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .visible-tablet {
+    display: none;
+
+    @include tablet {
+      display: inline;
+    }
+  }
 }

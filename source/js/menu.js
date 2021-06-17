@@ -21,15 +21,15 @@ if (toggle) {
   });
 }
 
-function openMenu() {
-  toggle.classList.add('is-active');
-  menuNav.classList.add('navigation--open');
-  menu.classList.add('menu--open');
-  body.classList.add('overflow');
-}
-function closeMenu() {
-  toggle.classList.remove('is-active');
-  menuNav.classList.remove('navigation--open');
-  menu.classList.remove('menu--open');
-  body.classList.remove('overflow');
-}
+// function openMenu() {
+//   toggle.classList.add('is-active');
+//   menuNav.classList.add('navigation--open');
+//   menu.classList.add('menu--open');
+//   body.classList.add('overflow');
+// }
+// function closeMenu() {
+//   toggle.classList.remove('is-active');
+//   menuNav.classList.remove('navigation--open');
+//   menu.classList.remove('menu--open');
+//   body.classList.remove('overflow');
+// }

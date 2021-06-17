@@ -1,52 +1,104 @@
-.footer{
-    // background-color: pink;
+.footer {
+  // background-color: pink;
+  position: relative;
 }
-.footer__main{
-    display: flex;
-    // flex-wrap: wrap;
-    justify-content: space-between;
-}
-.footer__wrap{
-    max-width: 422px;
-    .company{
-        display: none;
-    }
 
+.footer__main {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include tablet {
+    display: block;
+  }
 }
-.footer__navigation{
+
+.footer__wrap {
+  max-width: 422px;
+
+  .company {
+    display: none;
+  }
+
+  @include tablet {
+    max-width: 100%;
     display: flex;
-    // flex-wrap: wrap;
     justify-content: space-between;
-    h3{
-        @include title;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 16px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        color: $dark-grey;
+    align-items: center;
+    border-bottom: 1px solid rgba(#626962, 0.2);
+    padding-bottom: 26px;
+
+    .company {
+      display: block;
     }
+  }
+
+  @include mobile {
+    flex-direction: column;
+
+    .company {
+      margin-top: 26px;
+    }
+  }
 }
-.footer__bottom{
-    // opacity: 0.2;
-    /* #353735 */
-    
-    border-top: 1px solid rgba(#626962, 0.2);
+
+.footer__navigation {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+
+  h3 {
+    @include title;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $dark-grey;
+  }
+
+  @include tablet {
+    padding-top: 38px;
+  }
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.footer__bottom {
+  padding: 14px 0;
+
+  border-top: 1px solid rgba(#626962, 0.2);
+
+  .company,
+  .copyright,
+  .privacy,
+  .developed {
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $dark-grey;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+
+  @include tablet {
+
     .company,
-    .copyright,
-    .privacy,
-    .developed{
-        font-size: 13px;
-        line-height: 24px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: $dark-grey;
-        opacity: 0.5;
-        text-decoration: none;
+    .copyright {
+      display: none;
     }
+  }
 }
-.footer__bottom-grid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
+.footer__bottom-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__logo .logo__name-company {
+  display: block;
 }

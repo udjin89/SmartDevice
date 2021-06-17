@@ -1,0 +1,104 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  width: 490px;
+  padding: 33px 39px 36px 39px;
+  background-color: $blue;
+}
+
+
+@keyframes modalShowX {
+  0% {
+    transform: translate(-1200px, -50%);
+  }
+
+  70% {
+    transform: translate(100px, -50%);
+  }
+
+  100% {
+    transform: translate(0, -50%);
+  }
+}
+
+.modal-showX {
+  animation-name: modalShowX;
+  animation-duration: 0.5s;
+}
+
+.modal h2 {
+  @include title-low;
+  font-size: 28px;
+  line-height: 140.62%;
+  color: $white;
+}
+
+.modal p {
+  color: $white;
+  width: 90%;
+}
+
+.modal label {
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.8;
+  padding-left: 40px;
+}
+
+.modal input,
+.modal textarea {
+  display: block;
+  width: 100%;
+  padding: 14px 0 15px 24px;
+  margin-bottom: 30px;
+  border: none;
+  color: $white;
+  background-color: rgba($white, 0.1);
+
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+    font-family: "PTMono", "Arial", sans-serif;
+    opacity: 1;
+  }
+}
+
+.modal textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+.modal button {
+  display: block;
+  margin-bottom: 34px;
+}
+
+.modal__check {
+  position: relative;
+  cursor: pointer;
+}
+
+.modal input[type=checkbox]+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $white;
+  background-image: none;
+}
+
+.modal input[type=checkbox]:checked+label::before {
+  background-image: url("../img/icon/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

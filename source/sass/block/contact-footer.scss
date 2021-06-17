@@ -1,15 +1,25 @@
-.contact-footer{
-    max-width: 333px;
+.contact-footer {
+  max-width: 333px;
 }
-.contact-footer__list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+
+.contact-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.contact-footer__link{
-    font-size: 15px;
-    line-height: 25px;
-    color: $dark-grey;
-    text-decoration: none;
-    opacity: 0.5;
+
+.contact-footer__link {
+  font-size: 15px;
+  line-height: 25px;
+  color: $dark-grey;
+  text-decoration: none;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
 }
