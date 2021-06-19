@@ -1,16 +1,64 @@
 .navigation {
   max-width: 657px;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+
+  @include mobile {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.navigation h3 {
+  grid-column: 1/3;
+  @include title;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $dark-grey;
+  margin-bottom: 26px;
+
+
+  @include tablet {
+    padding-top: 38px;
+  }
+
+  @include mobile {
+    position: relative;
+    display: block;
+    padding: 28px 0;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+      height: 16px;
+      width: 1px;
+      background-color: red;
+    }
+
+    &:after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+
 }
 
 .navigation__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  // display: flex;
+  display: flex;
   // flex-wrap: wrap;
-  // flex-direction: column;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  flex-direction: column;
 
   @include tablet {
     display: block;
@@ -18,7 +66,7 @@
 }
 
 .navigation__item {
-  width: 50%;
+  // width: 50%;
 
   @include tablet {
     width: 100%;

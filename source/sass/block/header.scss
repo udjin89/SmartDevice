@@ -1,102 +1,114 @@
-.header{
-    min-height: 878px;
-    background-color: $dark-grey;
+.header {
+  min-height: 878px;
+  background-color: $dark-grey;
 
-    background-image: url("../img/background/header.png"),url("../img/background/sheme.png"), url("../img/background/triangle.svg");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: cover, auto, auto;
-    background-position-x: center, 1030px, 82%;
-    background-position-y: center, 260px, 50%;
-    @include desktop-background{
-      // background-color: pink;
-      background-position-x: center, 140%, 82%;
-      // background-attachment:fixed;
-    }
-    @include desktop-background-step2{
-      background-position-x: center, 750px, 82%;
-    }
+  background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover, auto, auto;
+  background-position-x: center, 1030px, 82%;
+  background-position-y: center, 260px, 50%;
 
-    @include retina {
-      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
-    }
-    @include tablet {
-      // background-color: $dark-grey;
-      min-height: 0;
-      padding-bottom: 160px;
-      background-image: url("../img/background/header.png"),url("../img/background/sheme.png"), url("../img/background/triangle-tablet.svg");
-      background-size: cover, 465px 340px, 330px 466px;
-      background-position-x: center, 510px, right;
-      background-position-y: center, 105px, 0;
-    }
-  
-    @include mobile {
-      background-image: url("../img/background/header.png"),url("../img/background/sheme.png"), url("../img/background/triangle-mobile.svg");
-      background-size: cover, 301px 220px, auto;
-      background-position-x: center, 130%, right;
-      background-position-y: center, 90px, 0;
-    }
+  @include desktop-background {
+    background-position-x: center, 140%, 82%;
+  }
+
+  @include desktop-background-step2 {
+    background-position-x: center, 750px, 82%;
+  }
+
+  @include retina {
+    background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
+  }
+
+  @include tablet {
+    // background-color: $dark-grey;
+    min-height: 0;
+    padding-bottom: 165px;
+    background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-tablet.svg");
+    background-size: cover, 465px 340px, 330px 466px;
+    background-position-x: center, 510px, right;
+    background-position-y: center, 105px, 0;
+  }
+
+  @include mobile {
+    background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-mobile.svg");
+    background-size: cover, 301px 220px, auto;
+    background-position-x: center, 130%, right;
+    background-position-y: center, 90px, 0;
+  }
 
 }
-.header__grid{
-    display: grid;
-    grid-template-rows: min-content 1fr;
+
+.header__grid {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  height: 100%;
 }
-.header__top{
-    margin-top: 33px;
-    display: flex;
-    justify-content: space-between;
-    @include tablet{
-      margin-top: 19px;
-    }
-    @include mobile{
-      margin-top: 17px;
-    }
+
+.header__top {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    margin-top: 19px;
+  }
+
+  @include mobile {
+    margin-top: 17px;
+  }
 }
-.header__main{
+
+.header__main {
   position: relative;
-    margin-top: 225px;
-    // background-image: url("../img/background/sheme.png"), url("../img/background/triangle.svg");
-    // background-position: 110% top, right top;
-    // background-repeat: no-repeat, no-repeat;
-    // @include retina {
-    //   background-image: url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
-    // }
-    // @include tablet {
-    //   min-height: 0;
-    //   background-size: 100%;
-    // }
-  
-    // @include mobile {
-    //   background-size: 100%;
-    // }
-    @include tablet{
-      margin-top: 114px;
-      padding-left: 66px;
-    }
-    @include mobile{
-      margin-top: 233px;
-      padding-left: 0;
-    }
+  margin-top: 225px;
+  // background-image: url("../img/background/sheme.png"), url("../img/background/triangle.svg");
+  // background-position: 110% top, right top;
+  // background-repeat: no-repeat, no-repeat;
+  // @include retina {
+  //   background-image: url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
+  // }
+  // @include tablet {
+  //   min-height: 0;
+  //   background-size: 100%;
+  // }
+
+  // @include mobile {
+  //   background-size: 100%;
+  // }
+  @include tablet {
+    margin-top: 114px;
+    padding-left: 66px;
+  }
+
+  @include mobile {
+    margin-top: 233px;
+    padding-left: 0;
+  }
 }
-.header__main h1{
+
+.header__main h1 {
   @include title;
   font-size: 80px;
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: $white;
-  @include tablet{
+
+  @include tablet {
     font-size: 60px;
     line-height: 70px;
     width: 430px;
   }
-  @include mobile{
+
+  @include mobile {
     width: 100%;
     font-size: 40px;
     line-height: 47px;
   }
 }
-.header__main p{
+
+.header__main p {
   font-size: 22px;
   line-height: 34px;
   color: $white;
@@ -106,7 +118,8 @@
   margin: 0;
   margin-top: 30px;
   max-width: 750px;
-  &::before{
+
+  &::before {
     position: absolute;
     content: "";
     width: 66px;
@@ -115,18 +128,21 @@
     top: 15px;
     left: 0;
   }
-  @include tablet{
+
+  @include tablet {
     width: 520px;
     font-size: 18px;
     padding-left: 50px;
     margin-top: 25px;
     line-height: 156.8%;
-    &::before{
+
+    &::before {
       width: 33px;
       top: 20px;
     }
   }
-  @include mobile{
+
+  @include mobile {
     width: 100%;
     font-size: 16px;
   }

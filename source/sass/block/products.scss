@@ -1,10 +1,10 @@
 .products {
-  padding-top: 93px;
-  padding-bottom: 127px;
+  padding-top: 88px;
+  padding-bottom: 128px;
   background-color: $dark-grey;
 
   @include tablet {
-    padding-top: 53px;
+    padding-top: 45px;
     padding-bottom: 78px;
   }
 
@@ -26,7 +26,7 @@
 .products__list {
   padding: 0;
   margin: 0;
-  margin-top: 47px;
+  margin-top: 52px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, minmax(300px, 370px));
@@ -34,7 +34,9 @@
   justify-content: center;
 
   @include tablet {
+    margin-top: 42px;
     grid-template-columns: 1fr;
+    row-gap: 46px;
   }
 }
 
@@ -74,6 +76,10 @@
 
   @include tablet {
     height: 256px;
+
+    p {
+      padding: 40px 0 0 43px;
+    }
   }
 }
 
@@ -92,6 +98,81 @@
 
   &--components {
     background-image: url("../img/content/components.png");
+  }
+
+  @include retina {
+    &--manufacture {
+      background-image: url("../img/content/manufacture@2x.png");
+
+    }
+
+    &--set {
+      background-image: url("../img/content/set@2x.png");
+    }
+
+    &--components {
+      background-image: url("../img/content/components@2x.png");
+    }
+  }
+
+  @include tablet {
+    &--manufacture {
+      background-image: url("../img/content/manufacture-tablet.png");
+
+    }
+
+    &--set {
+      background-image: url("../img/content/set-tablet.png");
+    }
+
+    &--components {
+      background-image: url("../img/content/components-tablet.png");
+    }
+
+    @include retina {
+      &--manufacture {
+        background-image: url("../img/content/manufacture-tablet@2x.png");
+
+      }
+
+      &--set {
+        background-image: url("../img/content/set-tablet@2x.png");
+      }
+
+      &--components {
+        background-image: url("../img/content/components-tablet@2x.png");
+      }
+    }
+  }
+
+  @include mobile {
+    &--manufacture {
+      background-image: url("../img/content/manufacture-mobile.png");
+
+    }
+
+    &--set {
+      background-image: url("../img/content/set-mobile.png");
+    }
+
+    &--components {
+      background-image: url("../img/content/components-mobile.png");
+    }
+
+    @include retina {
+      &--manufacture {
+        background-image: url("../img/content/manufacture-mobile@2x.png");
+
+      }
+
+      &--set {
+        background-image: url("../img/content/set-mobile@2x.png");
+      }
+
+      &--components {
+        background-image: url("../img/content/components-mobile@2x.png");
+      }
+    }
   }
 }
 

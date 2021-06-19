@@ -1,18 +1,29 @@
 .about {
   position: relative;
-  margin-top: 110px;
+  margin-top: 100px;
   padding-bottom: 110px;
 
   h2 {
     @include title-low;
     color: $grey;
+    margin-bottom: 22px;
   }
 
   p {
     color: $grey;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     padding: 0;
+  }
+
+  @include tablet {
+    margin-top: 65px;
+    padding-bottom: 82px;
+
+    p {
+      margin-bottom: 19px;
+      padding-left: 2px;
+    }
   }
 }
 
@@ -22,7 +33,7 @@
 }
 
 .about__wrap {
-  margin-left: 280px;
+  margin-left: 300px;
   max-width: 984px;
 
   @include tablet {
@@ -36,6 +47,8 @@
 
 .about__year {
   position: absolute;
+  top: 35px;
+  left: 40px;
   @include title;
   display: inline-block;
   font-size: 156.248px;
@@ -44,10 +57,8 @@
   background: url("../img/background/about.png");
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: contain;
   color: $blue;
   text-align: center;
-  // padding: 2em;
   /* -webkit-background-clip обрезает фон элемента по контуру текста */
   -webkit-text-fill-color: transparent;
   /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
@@ -55,7 +66,7 @@
   transform: rotate(-90deg);
 
   @include tablet {
-    top: 0;
+    top: 55px;
     left: -85px;
     font-size: 178.324px;
     line-height: 251px;

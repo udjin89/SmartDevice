@@ -1,12 +1,14 @@
 .footer {
   // background-color: pink;
   position: relative;
+  padding-top: 64px;
 }
 
 .footer__main {
   display: flex;
   // flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 58px;
 
   @include tablet {
     display: block;
@@ -46,24 +48,12 @@
   display: flex;
   // flex-wrap: wrap;
   justify-content: space-between;
-
-  h3 {
-    @include title;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: $dark-grey;
-  }
-
-  @include tablet {
-    padding-top: 38px;
-  }
+  width: 70%;
 
   @include mobile {
     display: block;
   }
+
 }
 
 .footer__bottom {
@@ -84,6 +74,18 @@
     text-decoration: none;
   }
 
+  .company {
+    margin-left: 5%;
+  }
+
+  .privacy {
+    margin-left: 10.2%;
+  }
+
+  .developed {
+    margin-left: auto;
+  }
+
   @include tablet {
 
     .company,
@@ -91,12 +93,26 @@
       display: none;
     }
   }
+
+  @include mobile {
+
+    .privacy,
+    .developed {
+
+      text-align: center;
+    }
+  }
 }
 
 .footer__bottom-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  // justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .footer__logo .logo__name-company {

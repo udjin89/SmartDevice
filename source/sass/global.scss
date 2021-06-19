@@ -25,8 +25,8 @@ img {
   position: relative;
   max-width: 1450px;
   margin: 0 auto;
-  padding: 0 20px;
-  height: 100%;
+  padding: 0 19px;
+  // height: 100%;
 
   @include tablet {
     max-width: 820px;
@@ -40,7 +40,7 @@ img {
 
   &--about {
     // padding-left: 50px;
-    padding-right: 130px;
+    padding-right: 120px;
 
     @include tablet {
       padding-right: 25px;
@@ -49,6 +49,17 @@ img {
     @include mobile {
       padding-right: 15px;
     }
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 960px) {
+  html {
+    margin-left: calc(100vw - 100%);
+    margin-right: 0;
   }
 }
 
@@ -69,6 +80,7 @@ img {
 }
 
 .overflow {
+  // position: fixed;
   overflow: hidden;
 }
 

@@ -86,7 +86,7 @@
   cursor: pointer;
 }
 
-.modal input[type=checkbox]+label::before {
+.modal__form input[type=checkbox]+label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -97,7 +97,7 @@
   background-image: none;
 }
 
-.modal input[type=checkbox]:checked+label::before {
+.modal__form input[type=checkbox]:checked+label::before {
   background-image: url("../img/icon/check.svg");
   background-repeat: no-repeat;
   background-position: center;

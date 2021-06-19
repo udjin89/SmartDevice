@@ -1,5 +1,10 @@
 .contact-footer {
   max-width: 333px;
+
+  @include mobile {
+    max-width: 100%;
+    border-top: 1px solid rgba(#626962, 0.2);
+  }
 }
 
 .contact-footer__list {
@@ -21,5 +26,45 @@
 
   &:active {
     opacity: 0.7;
+  }
+}
+
+.contact-footer h3 {
+
+  @include title;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $dark-grey;
+  margin-bottom: 26px;
+
+  @include tablet {
+    padding-top: 38px;
+  }
+
+  @include mobile {
+
+    position: relative;
+    display: block;
+    padding: 28px 0;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translateY(-50%);
+      right: 8px;
+      height: 16px;
+      width: 1px;
+      background-color: red;
+    }
+
+    &:after {
+      transform: translateY(-50%) rotate(90deg);
+    }
   }
 }

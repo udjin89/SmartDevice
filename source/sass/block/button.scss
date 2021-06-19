@@ -11,6 +11,7 @@
   border-radius: 5px;
   padding: 14px 26px;
   cursor: pointer;
+  // @include focus;
 }
 
 .button--contact {
@@ -21,6 +22,16 @@
   @include tablet {
     display: none;
   }
+
+  &:hover {
+    border-color: $blue;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
 }
 
 .button--consultation {
@@ -71,9 +82,18 @@
 
 .button--about {
   display: inline-block;
-  margin-top: 46px;
+  margin-top: 15px;
   color: $blue;
   border-color: $blue;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @include tablet {
+    margin-top: 23px;
+    margin-left: 3px;
+  }
 
 }
 
@@ -108,4 +128,9 @@
 .button--submit {
   width: 100%;
   background-color: transparent;
+  margin-top: 4px;
+
+  @include tablet {
+    margin-top: 8px;
+  }
 }

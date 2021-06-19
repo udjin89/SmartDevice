@@ -51,7 +51,7 @@
       <div class="header__main">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#" class="button button--consultation">
+        <a href="#questions" class="button button--consultation">
           <span class="mobile-hidden">Получить бесплатную консультацию</span>
           <span class="mobile-visible">Бесплатная консультация</span>
         </a>
@@ -102,7 +102,7 @@
         </ul>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="container container--about">
 
         <div class="about__year">2005</div>
@@ -110,22 +110,23 @@
           <h2>О компании</h2>
           <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
             1997
-            года. Выполняем срочные заказы и пилотные образцы до 10 дней. </p>
-          <p> Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-            Печатные
-            платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span
-              class="visible-desktop">(РЖД),
-              РоссАвтоПрома
-              (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники
-              России.</span><span class="visible-tablet">..</span>
+            года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+            Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span
+              class="visible-tablet">..</span>
+            <span class="visible-desktop">
+              (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие
+              Производители светотехники
+              России.</span>
+
           </p>
           <a href="#" class="button button--about">Подробнее</a>
         </div>
       </div>
     </section>
-    <section class="products">
+    <section class="products" id="products">
       <div class="container products__grid">
-        <h2>Service Device предлагает следующие товары и услуги</h2>
+        <h2>Service Device предлагает следующие товары и&nbsp;услуги</h2>
         <ul class="products__list">
           <li class="products__item">
             <a href="#" class="products__link products__link--manufacture">
@@ -149,8 +150,36 @@
       </div>
 
     </section>
-    <section class="questions">
-      <h2>Остались вопросы? Задайте их нам!</h2>
+    <section class="questions" id="questions">
+      <div class="container">
+        <div class="questions__grid">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="questions__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="questions__form-grid">
+              <label class="hidden" for="user-name">Ваше имя</label>
+              <input id="user-name" name="user-name" type="text" placeholder="Имя" title="Введите Имя" aria-label="name"
+                required>
+              <label class="hidden" for="user-tel">номер телефона</label>
+              <input id="user-tel" name="user-tel" type="tel" placeholder="Телефон"
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введите корректный номер телефона"
+                required aria-label="number">
+              <div class="textarea">
+                <textarea name="user-question" id="question" rows="5" placeholder="Ваш вопрос"></textarea>
+                <label for="question" class="hidden">Ваш вопрос</label>
+              </div>
+
+              <button type="submit" class="button button--submit" value="Отправить">Задать вопрос</button>
+
+              <input type="checkbox" name="personal-data" id="check" class="hidden" required>
+              <label for="check" class="questions__check" tabindex="0">Я согласен на обработку персональных
+                данных</label>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -165,7 +194,7 @@
               <use xlink:href="img/icon/sprite.svg#logo"></use>
             </svg>
             <div class="logo__name-company logo__name-company--grey ">
-              <span class="logo__name">Smart Device</span>
+              <span class="logo__name">Service Device</span>
               <span class="logo__slogan">умные технологии</span>
             </div>
           </a>
@@ -186,34 +215,36 @@
 
         </div>
         <div class="footer__navigation accordion">
-          <nav class="navigation">
-            <h3>Разделы сайта</h3>
+          <nav class="navigation accordion__item accordion__item--active">
+            <h3 class="panel-active">Разделы сайта</h3>
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="#facts">О компании</a>
+                <a class="navigation__link" href="#about">О компании</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#types"> Продукты</a>
+                <a class="navigation__link" href="#products"> Продукты</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#about"> Производство печатных плат</a>
+                <a class="navigation__link" href="#"> Производство печатных плат</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#contact"> Монтаж печатных плат</a>
+                <a class="navigation__link" href="#"> Монтаж печатных плат</a>
+              </li>
+            </ul>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#"> Комплектующие </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#contact"> Комплектующие </a>
+                <a class="navigation__link" href="#">Доставка</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="#contact">Доставка</a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#contact">Контакты</a>
+                <a class="navigation__link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
-          <div class="contact-footer">
-            <h3>Наш офис</h3>
+          <div class="contact-footer accordion__item ">
+            <h3 class="panel-active">Наш офис</h3>
             <ul class="contact-footer__list">
               <li class="contact-footer__item">
                 <a class="contact-footer__link"
@@ -246,38 +277,37 @@
 
   </footer>
   <!-- Modal -->
-  <section class="modal-wrapper hidden">
-    <div class="modal modal--call modal--showX">
-      <button class="button button--close" aria-label="Закрыть">
+  <div class="bg-overlay hidden"></div>
+  <div class="modal modal--call modal--showX hidden">
+    <button class="button button--close" aria-label="Закрыть">
 
-      </button>
-      <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <form class="call" action="https://echo.htmlacademy.ru" method="post">
-        <div class="">
-          <label class="hidden" for="user-name">Ваше имя</label>
-          <input id="user-name" name="user-name" type="text" placeholder="Имя" required title="Введите Имя"
-            aria-label="name" autofocus>
-          <label class="hidden" for="user-tel">номер телефона</label>
-          <input id="user-tel" name="user-tel" type="tel" placeholder="Телефон"
-            pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введите корректный номер телефона"
-            required aria-label="number">
-          <div>
-            <textarea name="user-question" id="question" rows="5" placeholder="Ваш вопрос"></textarea>
-            <label for="question" class="hidden">Ваш вопрос</label>
-          </div>
+    </button>
+    <h2>Закажите звонок</h2>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="">
+        <label class="hidden" for="user-name">Ваше имя</label>
+        <input id="user-name" name="user-name" type="text" placeholder="Имя" required title="Введите Имя"
+          aria-label="name" autofocus>
+        <label class="hidden" for="user-tel">номер телефона</label>
+        <input id="user-tel" name="user-tel" type="tel" placeholder="Телефон"
+          pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" title="Введите корректный номер телефона"
+          required aria-label="number">
+        <div>
+          <textarea name="user-question" id="question" rows="5" placeholder="Ваш вопрос"></textarea>
+          <label for="question" class="hidden">Ваш вопрос</label>
         </div>
+      </div>
 
 
-        <button type="submit" class="button button--submit" value="Отправить">Отправить</button>
+      <button type="submit" class="button button--submit" value="Отправить">Отправить</button>
 
-        <input type="checkbox" name="personal-data" id="check" class="hidden" required>
-        <label for="check" class="modal__check" tabindex="0">Я согласен на обработку персональных данных</label>
-      </form>
-    </div>
-  </section>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
+      <input type="checkbox" name="check" id="modal-check" class="hidden">
+      <label for="modal-check" class="modal__check">Я согласен на обработку персональных данных</label>
+    </form>
+  </div>
+  <script src="js/vendor.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 
 </body>
 

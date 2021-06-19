@@ -1,35 +1,56 @@
-const popup = document.querySelector('.modal-wrapper');
-const button = document.querySelector('.button--contact');
 
-if (button && popup) {
+const overlay = document.querySelector('.bg-overlay');
+const button = document.querySelector('.button--contact');
+const modal = document.querySelector('.modal--call');
+const buttonClose = modal.querySelector('.button--close');
+const inputName = modal.querySelector('input[type=text]');
+const body = document.querySelector('.page__body');
+
+if (button) {
   button.addEventListener('click', function (evt) {
     evt.preventDefault();
-    // evt.stopPropagation();
-    popup.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+    modal.classList.remove('hidden');
+    inputName.focus();
+    // body.dataset.scrollY = getBodyScrollTop() // сохраним значение скролла
+    // body.style.top = `-${body.dataset.scrollY}px`
+    body.classList.add('overflow');
     eventclose();
 
   });
 }
+
 function eventclose() {
   window.addEventListener('keydown', onEscKeydown);
+  overlay.addEventListener('click', onOverlayClick);
+  buttonClose.addEventListener('click', removeModal);
 
-  window.addEventListener('click', onOverlayClick);
+  // popup.addEventListener('click', function () {
+  //   document.querySelector('.modal').classList.add('hidden');
+  //   this.classList.add('hidden');
+  // });
 }
 function onEscKeydown(evt) {
   if (evt.key === 'Escape' || evt.key === 'Esc') {
     evt.preventDefault();
-    removeMessage();
+    removeModal();
   }
 }
 
-function removeMessage() {
-  popup.classList.add('hidden');
+function removeModal() {
+  overlay.classList.add('hidden');
+  modal.classList.add('hidden');
+  body.classList.remove('overflow');
   window.removeEventListener('keydown', onEscKeydown);
-  window.removeEventListener('click', onOverlayClick);
+  overlay.removeEventListener('click', onOverlayClick);
+
 }
 
 function onOverlayClick() {
-  console.log('clickocerlay')
+  console.log('clickocerlay');
+  removeModal();
+}
 
-  removeMessage();
+function getBodyScrollTop() {
+  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
 }

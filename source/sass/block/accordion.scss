@@ -1,0 +1,20 @@
+@include mobile {
+  .accordion__item ul {
+    display: none;
+  }
+
+  .panel-active~ul {
+
+    display: block;
+
+
+  }
+
+  .panel-active {
+    &:before {
+      display: none;
+    }
+
+  }
+
+}
