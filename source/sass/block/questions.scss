@@ -176,7 +176,7 @@
   }
 }
 
-.questions__form input[type="checkbox"]+label::before {
+.questions__form input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   left: 8px;
@@ -188,7 +188,7 @@
   background-image: none;
 }
 
-.questions__form input[type="checkbox"]:checked+label::before {
+.questions__form input[type="checkbox"]:checked + label::before {
   background-image: url("../img/icon/check.svg");
   background-repeat: no-repeat;
   background-position: center;
