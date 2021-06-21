@@ -101,7 +101,6 @@ const copy = (done) => {
   // берем файлы указаные в массиве // "source/img/**/*.{jpg,png,svg}" для копирования изображений
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/img/**/*.{jpg,png,svg}",
     "source/*.ico"
   ],
     {

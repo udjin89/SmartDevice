@@ -1215,7 +1215,7 @@
 .modal textarea {
   display: block;
   width: 100%;
-  padding: 14px 0 15px 24px;
+  padding: 0 0 0 24px;
   margin-bottom: 30px;
   border: none;
   color: #ffffff;
@@ -1225,21 +1225,31 @@
     line-height: 22px;
     color: #ffffff;
     font-family: "PTMono", "Arial", sans-serif;
-    opacity: 1; }
+    opacity: 1;
+    line-height: 50px; }
   .modal input::placeholder,
   .modal textarea::placeholder {
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
     font-family: "PTMono", "Arial", sans-serif;
-    opacity: 1; }
+    opacity: 1;
+    line-height: 50px; }
   .modal input:hover,
   .modal textarea:hover {
     background-color: rgba(255, 255, 255, 0.3); }
 
+.modal input {
+  height: 50px;
+  line-height: 50px; }
+
 .modal textarea {
   overflow: auto;
   resize: none; }
+  .modal textarea::-moz-placeholder {
+    line-height: 22px; }
+  .modal textarea::placeholder {
+    line-height: 22px; }
 
 .modal button {
   display: block;
