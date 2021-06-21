@@ -12,19 +12,19 @@
     margin-top: 40px;
     padding-bottom: 65px;
   }
+}
 
-  .visible-desktop {
-    @include tablet {
-      display: none;
-    }
-  }
-
-  .visible-tablet {
+.about .visible-desktop {
+  @include tablet {
     display: none;
+  }
+}
 
-    @include tablet {
-      display: inline;
-    }
+.about .visible-tablet {
+  display: none;
+
+  @include tablet {
+    display: inline;
   }
 }
 
@@ -58,9 +58,11 @@
     padding-right: 0;
     // height: 80px;
     overflow: hidden;
+    /* stylelint-disable */
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    /* stylelint-enable */
   }
 
   @include mobile {

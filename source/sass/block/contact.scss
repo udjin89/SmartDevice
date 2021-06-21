@@ -15,27 +15,30 @@
   position: relative;
   line-height: 18px;
 
-  @include tablet {
-    span {
-      display: none;
-    }
-  }
-
-  svg {
-    color: $blue;
-  }
-
   &:hover {
     color: $green;
-
-    svg {
-      color: $green;
-    }
   }
 
   &:active {
     opacity: 0.5;
   }
+}
+
+.contact__mail span,
+.contact__phone span {
+  @include tablet {
+    display: none;
+  }
+}
+
+.contact__mail svg,
+.contact__phone svg {
+  color: $blue;
+}
+
+.contact__mail:hover svg,
+.contact__phone:hover svg {
+  color: $green;
 }
 
 .contact__icon {
@@ -49,12 +52,12 @@
 
 .contact__mail {
   padding-left: 39px;
+}
 
+.contact__mail svg {
   @include tablet {
-    svg {
-      width: 25px;
-      height: 19px;
-    }
+    width: 25px;
+    height: 19px;
   }
 }
 
@@ -65,14 +68,16 @@
   @include tablet {
     padding-left: 0;
     margin-left: 33px;
-
-    svg {
-      width: 24px;
-      height: 24px;
-    }
   }
 
   @include mobile {
     margin-left: 23px;
+  }
+}
+
+.contact__phone svg {
+  @include tablet {
+    width: 24px;
+    height: 24px;
   }
 }

@@ -7,3 +7,11 @@
     display: none;
   }
 }
+
+.panel-active + .contact-footer__list {
+  padding-bottom: 28px;
+}
+
+.panel-active ~ .navigation__list:last-of-type {
+  padding-bottom: 28px;
+}

@@ -84,8 +84,10 @@
 .modal textarea {
   overflow: auto;
   resize: none;
+  height: 104px;
 
   &::placeholder {
+    padding-top: 10px;
     line-height: 22px;
   }
 }
@@ -109,7 +111,7 @@
   }
 }
 
-form input[type="checkbox"] + label::before {
+.modal input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -120,7 +122,7 @@ form input[type="checkbox"] + label::before {
   background-image: none;
 }
 
-form input[type="checkbox"]:checked + label::before {
+.modal input[type="checkbox"]:checked + label::before {
   background-image: url("../img/icon/check.svg");
   background-repeat: no-repeat;
   background-position: center;

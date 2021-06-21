@@ -30,17 +30,6 @@
 .footer__wrap {
   max-width: 422px;
 
-  .company {
-    display: none;
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $dark-grey;
-    opacity: 0.5;
-    text-decoration: none;
-  }
-
   @include tablet {
     max-width: 100%;
     display: flex;
@@ -49,20 +38,31 @@
     padding-bottom: 21px;
     padding-left: 25px;
     padding-right: 25px;
-
-    .company {
-      display: block;
-    }
   }
 
   @include mobile {
     flex-direction: column;
     padding-bottom: 54px;
     padding-left: 33px;
+  }
+}
 
-    .company {
-      margin-top: 26px;
-    }
+.footer__wrap .company {
+  display: none;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $dark-grey;
+  opacity: 0.5;
+  text-decoration: none;
+
+  @include tablet {
+    display: block;
+  }
+
+  @include mobile {
+    margin-top: 26px;
   }
 }
 
@@ -85,71 +85,74 @@
 
 .footer__bottom {
   padding: 14px 0;
-
   border-top: 1px solid rgba(#626962, 0.2);
-
-  .company,
-  .copyright,
-  .privacy,
-  .developed {
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $dark-grey;
-    opacity: 0.5;
-    text-decoration: none;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:active {
-      color: $blue;
-    }
-  }
-
-  .company {
-    margin-left: 5%;
-  }
-
-  .privacy {
-    margin-left: 10.2%;
-  }
-
-  .developed {
-    margin-left: auto;
-  }
-
-  @include tablet {
-    .company,
-    .copyright {
-      display: none;
-    }
-
-    .privacy,
-    .developed {
-      margin-top: 5px;
-      text-align: center;
-    }
-
-    .privacy {
-      margin-left: 0;
-    }
-  }
 
   @include mobile {
     padding-top: 20px;
+  }
+}
 
-    .privacy,
-    .developed {
-      text-align: center;
-    }
+.footer__bottom .company,
+.footer__bottom .copyright,
+.footer__bottom .privacy,
+.footer__bottom .developed {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $dark-grey;
+  opacity: 0.5;
+  text-decoration: none;
 
-    .developed {
-      margin-left: 0;
-      margin-top: 25 px;
-    }
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    color: $blue;
+  }
+}
+
+.footer__bottom .company {
+  margin-left: 5%;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.footer__bottom .copyright {
+  @include tablet {
+    display: none;
+  }
+}
+
+.footer__bottom .privacy {
+  margin-left: 10.2%;
+
+  @include tablet {
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.footer__bottom .developed {
+  margin-left: auto;
+
+  @include tablet {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  @include mobile {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 25 px;
   }
 }
 

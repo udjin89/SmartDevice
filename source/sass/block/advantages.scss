@@ -38,14 +38,6 @@
   border-left: 3px solid $blue;
   padding: 40px 40px 50px 42px;
 
-  .mobile-visible {
-    display: none;
-  }
-
-  svg {
-    color: $blue;
-  }
-
   @include tablet {
     padding: 24px 20px 5px 25px;
   }
@@ -58,6 +50,14 @@
       display: block;
     }
   }
+}
+
+.advantages__item .mobile-visible {
+  display: none;
+}
+
+.advantages__item svg {
+  color: $blue;
 }
 
 .advantages__item h3 {
@@ -95,10 +95,10 @@
 
 .advantages__item:hover {
   background-color: $blue;
+}
 
-  svg {
-    color: $white;
-  }
+.advantages__item:hover svg {
+  color: $white;
 }
 
 .advantages__item:hover h3 {

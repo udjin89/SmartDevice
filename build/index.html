@@ -286,14 +286,14 @@
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="">
+      <div class="modal__wrap-input">
         <label class="hidden" for="user-name">Ваше имя</label>
         <input name="user-name" type="text" placeholder="Имя" required title="Введите Имя" aria-label="name" autofocus>
         <label class="hidden" for="user-tel">номер телефона</label>
         <input name="user-tel" type="tel" placeholder="Телефон"
           pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" title="Введите корректный номер телефона" required
           aria-label="number">
-        <div>
+        <div class="modal__wrap-textarea">
           <textarea name="user-question" rows="5" placeholder="Ваш вопрос"></textarea>
           <label for="question" class="hidden">Ваш вопрос</label>
         </div>
