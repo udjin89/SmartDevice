@@ -57,7 +57,7 @@ if (button) {
     evt.preventDefault();
     overlay.classList.remove('hidden');
     modal.classList.remove('hidden');
-    modal.classList.add("modal-showX");
+    modal.classList.add("modal-show-x");
     inputName.focus();
     // body.dataset.scrollY = getBodyScrollTop() // сохраним значение скролла
     // body.style.top = `-${body.dataset.scrollY}px`
@@ -82,7 +82,7 @@ function onEscKeydown(evt) {
 function removeModal() {
   overlay.classList.add('hidden');
   modal.classList.add('hidden');
-  modal.classList.remove("modal-showX");
+  modal.classList.remove("modal-show-x");
   body.classList.remove('overflow');
   window.removeEventListener('keydown', onEscKeydown);
   overlay.removeEventListener('click', onOverlayClick);

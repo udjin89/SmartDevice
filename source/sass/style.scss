@@ -3,6 +3,8 @@
 @import "variables.scss";
 //
 @import "mixins.scss";
+// глобальные стили
+@import "global.scss";
 // подключение шрифтов
 @import "fonts.scss";
 //++++++++ Блоки +++++++++++
@@ -21,6 +23,4 @@
 @import "block/modal.scss";
 @import "block/bg-overlay.scss";
 @import "block/accordion.scss";
-
-// глобальные стили
-@import "global.scss";
+@import "block/panel-active.scss";

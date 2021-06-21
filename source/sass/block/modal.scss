@@ -12,7 +12,7 @@
 }
 
 
-@keyframes modalShowX {
+@keyframes modalShow-x {
   0% {
     transform: translate(-1200px, -50%);
   }
@@ -26,8 +26,8 @@
   }
 }
 
-.modal-showX {
-  animation-name: modalShowX;
+.modal-show-x {
+  animation-name: modalShow-x;
   animation-duration: 0.5s;
 }
 
@@ -67,23 +67,25 @@
     color: $white;
     font-family: "PTMono", "Arial", sans-serif;
     opacity: 1;
-    line-height: 50px;
+    // line-height: 50px;
   }
 
   &:hover {
     background-color: rgba($white, 0.3);
   }
 }
-.modal input{
+
+.modal input {
   // display: block;
   height: 50px;
-
   line-height: 50px;
 }
+
 .modal textarea {
   overflow: auto;
   resize: none;
-  &::placeholder{
+
+  &::placeholder {
     line-height: 22px;
   }
 }
@@ -107,7 +109,7 @@
   }
 }
 
-.modal__form input[type="checkbox"] + label::before {
+form input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -118,7 +120,7 @@
   background-image: none;
 }
 
-.modal__form input[type="checkbox"]:checked + label::before {
+form input[type="checkbox"]:checked + label::before {
   background-image: url("../img/icon/check.svg");
   background-repeat: no-repeat;
   background-position: center;

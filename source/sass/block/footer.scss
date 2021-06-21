@@ -1,5 +1,4 @@
 .footer {
-  // background-color: pink;
   position: relative;
   padding-top: 64px;
 
@@ -59,6 +58,7 @@
   @include mobile {
     flex-direction: column;
     padding-bottom: 54px;
+    padding-left: 33px;
 
     .company {
       margin-top: 26px;
@@ -71,7 +71,6 @@
   // flex-wrap: wrap;
   justify-content: space-between;
   width: 70%;
-
 
   @include tablet {
     width: 100%;
@@ -158,12 +157,10 @@
   display: flex;
   flex-wrap: wrap;
 
-  // justify-content: space-between;
-
-
   @include mobile {
     flex-direction: column;
     justify-content: center;
+    row-gap: 20px;
   }
 }
 

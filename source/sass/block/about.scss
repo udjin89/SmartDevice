@@ -3,30 +3,13 @@
   margin-top: 100px;
   padding-bottom: 110px;
 
-  h2 {
-    @include title-low;
-    color: $grey;
-    margin-bottom: 22px;
-  }
-
-  p {
-    color: $grey;
-    margin: 0;
-    margin-bottom: 22px;
-    padding: 0;
-  }
-
   @include tablet {
     margin-top: 65px;
     padding-bottom: 82px;
-
-    p {
-      margin-bottom: 19px;
-      padding-left: 2px;
-    }
   }
 
   @include mobile {
+    margin-top: 40px;
     padding-bottom: 65px;
   }
 
@@ -41,6 +24,49 @@
 
     @include tablet {
       display: inline;
+    }
+  }
+}
+
+.about h2 {
+  @include title-low;
+  color: $grey;
+  margin-bottom: 22px;
+
+  @include mobile {
+    margin-bottom: 18px;
+  }
+}
+
+.about p {
+  color: $grey;
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+  padding-right: 5px;
+
+  @include tablet {
+    margin-bottom: 19px;
+    padding-left: 2px;
+    overflow: hidden;
+  }
+
+  &:last-of-type {
+    // white-space: pre;
+    text-overflow: ellipsis;
+    width: 532px;
+    padding-right: 0;
+    // height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  @include mobile {
+    &:last-of-type {
+      width: 100%;
+      -webkit-line-clamp: 8;
     }
   }
 }
@@ -70,6 +96,7 @@
   top: 35px;
   left: 40px;
   display: inline-block;
+  vertical-align: middle;
   font-size: 156.248px;
   line-height: 260px;
 
@@ -81,7 +108,7 @@
   /* -webkit-background-clip обрезает фон элемента по контуру текста */
   -webkit-text-fill-color: transparent;
   /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
-  -webkit-background-clip: text;
+  background-clip: text;
   transform: rotate(-90deg);
 
   @include tablet {
