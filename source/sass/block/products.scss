@@ -21,6 +21,11 @@
 .products h2 {
   @include title-low;
   color: $white;
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
 }
 
 .products__list {
@@ -37,6 +42,10 @@
     margin-top: 42px;
     grid-template-columns: 1fr;
     row-gap: 46px;
+  }
+
+  @include mobile {
+    margin-top: 37px;
   }
 }
 

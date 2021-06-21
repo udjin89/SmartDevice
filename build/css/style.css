@@ -565,6 +565,10 @@
   @media screen and (max-width: 767.66px) {
     .products h2 {
       font-size: 28px; } }
+  @media screen and (max-width: 767.66px) {
+    .products h2 {
+      font-size: 28px;
+      line-height: 140.62%; } }
 
 .products__list {
   padding: 0;
@@ -580,6 +584,9 @@
       margin-top: 42px;
       grid-template-columns: 1fr;
       row-gap: 46px; } }
+  @media screen and (max-width: 767.66px) {
+    .products__list {
+      margin-top: 37px; } }
 
 .products__link {
   position: relative;
@@ -1086,6 +1093,14 @@
   @media screen and (max-width: 767.66px) {
     .about {
       padding-bottom: 65px; } }
+  @media screen and (max-width: 1023.33px) {
+    .about .visible-desktop {
+      display: none; } }
+  .about .visible-tablet {
+    display: none; }
+    @media screen and (max-width: 1023.33px) {
+      .about .visible-tablet {
+        display: inline; } }
 
 .about__grid {
   display: flex;
@@ -1132,16 +1147,6 @@
   @media screen and (max-width: 767.66px) {
     .about__year {
       display: none; } }
-
-@media screen and (max-width: 1023.33px) {
-  .about .visible-desktop {
-    display: none; } }
-
-.about .visible-tablet {
-  display: none; }
-  @media screen and (max-width: 1023.33px) {
-    .about .visible-tablet {
-      display: inline; } }
 
 .modal {
   position: fixed;
