@@ -25,6 +25,24 @@
       padding-left: 2px;
     }
   }
+
+  @include mobile {
+    padding-bottom: 65px;
+  }
+
+  .visible-desktop {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .visible-tablet {
+    display: none;
+
+    @include tablet {
+      display: inline;
+    }
+  }
 }
 
 .about__grid {
@@ -75,21 +93,5 @@
 
   @include mobile {
     display: none;
-  }
-}
-
-.about {
-  .visible-desktop {
-    @include tablet {
-      display: none;
-    }
-  }
-
-  .visible-tablet {
-    display: none;
-
-    @include tablet {
-      display: inline;
-    }
   }
 }

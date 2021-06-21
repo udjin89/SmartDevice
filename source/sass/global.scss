@@ -50,6 +50,13 @@ img {
       padding-right: 15px;
     }
   }
+
+  @include tablet {
+    &--footer {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
 }
 
 html {

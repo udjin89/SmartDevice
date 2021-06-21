@@ -2,11 +2,13 @@
   max-width: 333px;
 
   @include tablet {
+    padding-right: 25px;
     margin-right: 10px;
   }
 
   @include mobile {
     margin-right: 0;
+    padding: 0 15px;
     max-width: 100%;
     border-top: 1px solid rgba(#626962, 0.2);
   }
@@ -35,8 +37,8 @@
 }
 
 .contact-footer h3 {
-
   @include title;
+
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
@@ -54,6 +56,7 @@
     position: relative;
     display: block;
     padding: 28px 0;
+    padding-bottom: 0;
     cursor: pointer;
 
     &::before,
@@ -61,7 +64,7 @@
       position: absolute;
       content: "";
       top: 50%;
-      transform: translateY(-50%);
+      transform: translateY(50%);
       right: 8px;
       height: 16px;
       width: 1px;
@@ -69,7 +72,7 @@
     }
 
     &::after {
-      transform: translateY(-50%) rotate(90deg);
+      transform: translateY(50%) rotate(90deg);
     }
   }
 }

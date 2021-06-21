@@ -25,7 +25,9 @@
     background-image: none;
   }
 
-  @include mobile {}
+  @include mobile {
+    padding: 33px 0 41px 0;
+  }
 }
 
 .questions__grid {

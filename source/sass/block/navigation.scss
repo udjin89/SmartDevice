@@ -8,6 +8,11 @@
   @include tablet {
     display: block;
     max-width: 100%;
+    padding-left: 25px;
+  }
+
+  @include mobile {
+    padding: 0 15px;
   }
 }
 

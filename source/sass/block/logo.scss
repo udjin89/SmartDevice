@@ -18,8 +18,8 @@
 
   .logo__name {
     display: block;
-    @include title;
 
+    @include title;
     font-size: 25px;
     line-height: 29px;
     padding-top: 5px;
