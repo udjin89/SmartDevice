@@ -31,12 +31,12 @@
   }
 
   @include mobile {
+    padding-bottom: 70px;
     background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-mobile.svg");
     background-size: cover, 301px 220px, auto;
     background-position-x: center, 130%, right;
     background-position-y: center, 90px, 0;
   }
-
 }
 
 .header__grid {

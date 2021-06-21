@@ -11,10 +11,8 @@
   }
 
   .panel-active {
-    &:before {
+    &::before {
       display: none;
     }
-
   }
-
 }

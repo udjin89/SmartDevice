@@ -11,6 +11,7 @@ if (button) {
     evt.preventDefault();
     overlay.classList.remove('hidden');
     modal.classList.remove('hidden');
+    modal.classList.add("modal-showX");
     inputName.focus();
     // body.dataset.scrollY = getBodyScrollTop() // сохраним значение скролла
     // body.style.top = `-${body.dataset.scrollY}px`
@@ -24,11 +25,6 @@ function eventclose() {
   window.addEventListener('keydown', onEscKeydown);
   overlay.addEventListener('click', onOverlayClick);
   buttonClose.addEventListener('click', removeModal);
-
-  // popup.addEventListener('click', function () {
-  //   document.querySelector('.modal').classList.add('hidden');
-  //   this.classList.add('hidden');
-  // });
 }
 function onEscKeydown(evt) {
   if (evt.key === 'Escape' || evt.key === 'Esc') {
@@ -40,6 +36,7 @@ function onEscKeydown(evt) {
 function removeModal() {
   overlay.classList.add('hidden');
   modal.classList.add('hidden');
+  modal.classList.remove("modal-showX");
   body.classList.remove('overflow');
   window.removeEventListener('keydown', onEscKeydown);
   overlay.removeEventListener('click', onOverlayClick);

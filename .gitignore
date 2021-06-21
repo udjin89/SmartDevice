@@ -8,6 +8,7 @@
 *.json
 *.sublime*
 build/
+source/js/lib/
 node_modules/
 npm-debug.*
 source/css/*.css

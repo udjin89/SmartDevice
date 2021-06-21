@@ -46,10 +46,11 @@
 }
 
 .about__year {
+  @include title;
+
   position: absolute;
   top: 35px;
   left: 40px;
-  @include title;
   display: inline-block;
   font-size: 156.248px;
   line-height: 260px;
@@ -78,7 +79,6 @@
 }
 
 .about {
-
   .visible-desktop {
     @include tablet {
       display: none;

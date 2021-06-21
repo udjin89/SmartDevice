@@ -65,10 +65,10 @@ html {
 
 .page,
 .page__body {
+  @include standart-font;
   min-height: 100%;
   margin: 0;
   padding: 0;
-  @include standart-font;
 }
 
 .page__body {
@@ -76,7 +76,6 @@ html {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-
 }
 
 .overflow {

@@ -31,7 +31,6 @@
   &:active {
     opacity: 0.6;
   }
-
 }
 
 .button--consultation {
@@ -53,6 +52,16 @@
   @include mobile {
     display: block;
     margin-left: 0;
+    margin-top: 40px;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -78,6 +87,13 @@
     display: none;
   }
 
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    color: $blue;
+  }
 }
 
 .button--about {
@@ -95,6 +111,14 @@
     margin-left: 3px;
   }
 
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .button--close {
@@ -106,8 +130,8 @@
   background-color: transparent;
   border: none;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
     top: 50%;
@@ -116,11 +140,11 @@
     background-color: $white;
   }
 
-  &:before {
+  &::before {
     transform: translate(-50%, -50%) rotate(45deg);
   }
 
-  &:after {
+  &::after {
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 }
@@ -132,5 +156,20 @@
 
   @include tablet {
     margin-top: 8px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 16px;
+    min-height: 47px;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

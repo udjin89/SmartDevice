@@ -61,7 +61,6 @@
   color: $white;
   background-color: rgba($white, 0.1);
 
-
   &::placeholder {
     font-size: 16px;
     line-height: 22px;
@@ -69,11 +68,15 @@
     font-family: "PTMono", "Arial", sans-serif;
     opacity: 1;
   }
+
+  &:hover {
+    background-color: rgba($white, 0.3);
+  }
 }
 
 .modal textarea {
   overflow: auto;
-  resize: vertical;
+  resize: none;
 }
 
 .modal button {
@@ -84,9 +87,18 @@
 .modal__check {
   position: relative;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: $green;
+    opacity: 0.8;
+  }
 }
 
-.modal__form input[type=checkbox]+label::before {
+.modal__form input[type="checkbox"]+label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -97,7 +109,7 @@
   background-image: none;
 }
 
-.modal__form input[type=checkbox]:checked+label::before {
+.modal__form input[type="checkbox"]:checked+label::before {
   background-image: url("../img/icon/check.svg");
   background-repeat: no-repeat;
   background-position: center;

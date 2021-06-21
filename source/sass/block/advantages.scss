@@ -4,6 +4,10 @@
   @include tablet {
     padding-top: 52px;
   }
+
+  @include mobile {
+    padding-top: 37px;
+  }
 }
 
 .advantages__list {
@@ -24,6 +28,7 @@
   }
 
   @include mobile {
+    gap: 20px;
     grid-template-columns: 1fr;
   }
 }
@@ -32,6 +37,10 @@
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
   padding: 40px 40px 50px 42px;
+
+  .mobile-visible {
+    display: none;
+  }
 
   svg {
     color: $blue;
@@ -61,6 +70,25 @@
 
     p {
       margin-top: 8px;
+    }
+  }
+
+  @include mobile {
+    padding: 24px 12px 13px 25px;
+    min-height: 232px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 140.62%;
+    }
+
+    p {
+      margin-top: 8px;
+      // min-width: 249.9px;
+    }
+
+    .mobile-visible {
+      display: block;
     }
   }
 }

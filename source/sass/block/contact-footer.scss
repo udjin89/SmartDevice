@@ -1,7 +1,12 @@
 .contact-footer {
   max-width: 333px;
 
+  @include tablet {
+    margin-right: 10px;
+  }
+
   @include mobile {
+    margin-right: 0;
     max-width: 100%;
     border-top: 1px solid rgba(#626962, 0.2);
   }
@@ -51,8 +56,8 @@
     padding: 28px 0;
     cursor: pointer;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       position: absolute;
       content: "";
       top: 50%;
@@ -60,10 +65,10 @@
       right: 8px;
       height: 16px;
       width: 1px;
-      background-color: red;
+      background-color: #c4c4c4;
     }
 
-    &:after {
+    &::after {
       transform: translateY(-50%) rotate(90deg);
     }
   }

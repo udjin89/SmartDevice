@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 70px;
 
-  @include mobile {
+  @include tablet {
     display: block;
     max-width: 100%;
   }
@@ -13,6 +13,7 @@
 
 .navigation h3 {
   grid-column: 1/3;
+
   @include title;
   font-weight: 400;
   font-size: 15px;
@@ -32,9 +33,10 @@
     display: block;
     padding: 28px 0;
     cursor: pointer;
+    margin-bottom: 0;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       position: absolute;
       content: "";
       top: 50%;
@@ -42,14 +44,13 @@
       right: 8px;
       height: 16px;
       width: 1px;
-      background-color: red;
+      background-color: #c4c4c4;
     }
 
-    &:after {
+    &::after {
       transform: translateY(-50%) rotate(90deg);
     }
   }
-
 }
 
 .navigation__list {

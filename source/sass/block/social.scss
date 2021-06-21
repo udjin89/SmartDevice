@@ -17,6 +17,12 @@
 
 .social__item {
   margin-right: 16px;
+
+  @include tablet {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .social__link {
