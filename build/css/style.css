@@ -1270,9 +1270,11 @@ html {
     width: 532px;
     padding-right: 0;
     overflow: hidden;
+    /* stylelint-disable */
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical; }
+    -webkit-box-orient: vertical;
+    /* stylelint-enable */ }
   @media screen and (max-width: 767.66px) {
     .about p:last-of-type {
       width: 100%;
@@ -1393,7 +1395,7 @@ html {
 .modal textarea {
   display: block;
   width: 100%;
-  padding: 0 0 0 24px;
+  padding: 15px 0 0 24px;
   margin-bottom: 30px;
   border: none;
   color: #ffffff;
