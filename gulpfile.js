@@ -179,7 +179,7 @@ exports.default = gulp.series(
     sprite,
     script,
     concatjs,
-    // images,
+    images,
     // createWebp
   ),
   gulp.series(
