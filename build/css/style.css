@@ -168,7 +168,8 @@ html {
   position: relative;
   margin-top: 225px;
   grid-row-start: 2;
-  grid-row-end: 3; }
+  grid-row-end: 3;
+  height: 564px; }
   @media screen and (max-width: 1023.33px) {
     .header__main {
       height: auto;
@@ -513,6 +514,9 @@ html {
   margin: 0;
   padding: 0;
   list-style: none; }
+  @media screen and (max-width: 767.66px) {
+    .contact-footer__list {
+      padding-right: 10px; } }
 
 .contact-footer__link {
   font-size: 15px;
@@ -601,6 +605,8 @@ html {
       min-height: 232px; }
       .advantages__item .mobile-visible {
         display: block; } }
+  .advantages__item--special-padding {
+    padding-right: 13px; }
 
 .advantages__item .mobile-visible {
   display: none; }
@@ -1144,7 +1150,7 @@ html {
   display: block;
   height: 50px;
   line-height: 50px;
-  padding: 0 0 15px 17px;
+  padding-left: 17px;
   border: none;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1188,15 +1194,13 @@ html {
       height: 104px; } }
 
 .questions input[type="text"] {
-  width: 270px;
-  padding-top: 14px; }
+  width: 270px; }
   @media screen and (max-width: 1023.33px) {
     .questions input[type="text"] {
       width: 100%; } }
 
 .questions input[type="tel"] {
-  width: 270px;
-  padding-top: 14px; }
+  width: 270px; }
   @media screen and (max-width: 1023.33px) {
     .questions input[type="tel"] {
       width: 100%; } }
@@ -1288,9 +1292,12 @@ html {
     -webkit-box-orient: vertical;
     /* stylelint-enable */ }
   @media screen and (max-width: 767.66px) {
-    .about p:last-of-type {
-      min-width: 100%;
-      -webkit-line-clamp: 8; } }
+    .about p {
+      padding: 0; }
+      .about p:last-of-type {
+        min-width: 100%;
+        margin-top: 40px;
+        -webkit-line-clamp: 8; } }
 
 .about__grid {
   display: flex;
