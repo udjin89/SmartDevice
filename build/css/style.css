@@ -61,7 +61,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  min-height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0; }
 
@@ -1144,7 +1144,7 @@ html {
   display: block;
   height: 50px;
   line-height: 50px;
-  padding: 14px 0 15px 17px;
+  padding: 0 0 15px 17px;
   border: none;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
@@ -1188,13 +1188,15 @@ html {
       height: 104px; } }
 
 .questions input[type="text"] {
-  width: 270px; }
+  width: 270px;
+  padding-top: 14px; }
   @media screen and (max-width: 1023.33px) {
     .questions input[type="text"] {
       width: 100%; } }
 
 .questions input[type="tel"] {
-  width: 270px; }
+  width: 270px;
+  padding-top: 14px; }
   @media screen and (max-width: 1023.33px) {
     .questions input[type="tel"] {
       width: 100%; } }
@@ -1277,7 +1279,7 @@ html {
       overflow: hidden; } }
   .about p:last-of-type {
     text-overflow: ellipsis;
-    width: 532px;
+    min-width: 532px;
     padding-right: 0;
     overflow: hidden;
     /* stylelint-disable */
@@ -1287,7 +1289,7 @@ html {
     /* stylelint-enable */ }
   @media screen and (max-width: 767.66px) {
     .about p:last-of-type {
-      width: 100%;
+      min-width: 100%;
       -webkit-line-clamp: 8; } }
 
 .about__grid {

@@ -54,7 +54,7 @@
   &:last-of-type {
     // white-space: pre;
     text-overflow: ellipsis;
-    width: 532px;
+    min-width: 532px;
     padding-right: 0;
     // height: 80px;
     overflow: hidden;
@@ -67,7 +67,7 @@
 
   @include mobile {
     &:last-of-type {
-      width: 100%;
+      min-width: 100%;
       -webkit-line-clamp: 8;
     }
   }
