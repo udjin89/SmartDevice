@@ -114,6 +114,7 @@ html {
   src: url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff"); }
 
 .header {
+  position: relative;
   min-height: 878px;
   background-color: #1b2d37;
   background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle.svg");
@@ -133,7 +134,7 @@ html {
   @media screen and (max-width: 1023.33px) {
     .header {
       min-height: 0;
-      padding-bottom: 165px;
+      padding-bottom: 160px;
       background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-tablet.svg");
       background-size: cover, 465px 340px, 330px 466px;
       background-position-x: center, 510px, right;
@@ -165,9 +166,12 @@ html {
 
 .header__main {
   position: relative;
-  margin-top: 225px; }
+  margin-top: 225px;
+  grid-row-start: 2;
+  grid-row-end: 3; }
   @media screen and (max-width: 1023.33px) {
     .header__main {
+      height: auto;
       margin-top: 114px;
       padding-left: 66px; } }
   @media screen and (max-width: 767.66px) {
@@ -220,7 +224,7 @@ html {
       width: 520px;
       font-size: 18px;
       padding-left: 50px;
-      margin-top: 25px;
+      margin-top: 30px;
       line-height: 156.8%; }
       .header__main p::before {
         width: 33px;
@@ -228,7 +232,8 @@ html {
   @media screen and (max-width: 767.66px) {
     .header__main p {
       width: 100%;
-      font-size: 16px; } }
+      font-size: 16px;
+      margin-top: 25px; } }
 
 .logo {
   display: flex;
@@ -559,7 +564,7 @@ html {
   padding-top: 110px; }
   @media screen and (max-width: 1023.33px) {
     .advantages {
-      padding-top: 52px; } }
+      padding-top: 55px; } }
   @media screen and (max-width: 767.66px) {
     .advantages {
       padding-top: 37px; } }
@@ -588,7 +593,8 @@ html {
   padding: 40px 40px 50px 42px; }
   @media screen and (max-width: 1023.33px) {
     .advantages__item {
-      padding: 24px 20px 5px 25px; } }
+      padding: 24px 20px 5px 25px;
+      min-height: 232px; } }
   @media screen and (max-width: 767.66px) {
     .advantages__item {
       padding: 24px 11px 13px 25px;
