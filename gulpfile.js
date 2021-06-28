@@ -69,7 +69,7 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({ progressive: true }),
-      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.optipng({ optimizationLevel: 7 }),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/img"))
@@ -179,7 +179,7 @@ exports.default = gulp.series(
     script,
     concatjs,
     images,
-    // createWebp
+    createWebp
   ),
   gulp.series(
     server,

@@ -1,6 +1,10 @@
 .contact {
   display: flex;
   align-items: center;
+  // margin-right: 5px;
+  @include tablet{
+    margin-right: 0;
+  }
 }
 
 .contact__mail,

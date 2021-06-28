@@ -1,10 +1,10 @@
 .button {
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: "robotocondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
   color: $white;
   text-decoration: none;
   border: 1px solid $white;
@@ -67,7 +67,7 @@
 }
 
 .button--scroll {
-  font-family: "PTMono", "Arial", sans-serif;
+  font-family: "ptmono-regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -82,7 +82,7 @@
   transform-origin: left;
   padding: 0;
   position: absolute;
-  left: 0;
+  left: 8px;
   bottom: 90px;
 
   @include tablet {

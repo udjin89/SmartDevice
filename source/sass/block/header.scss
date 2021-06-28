@@ -19,6 +19,7 @@
 
   @include retina {
     background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
+    background-size: cover, 36.8%, auto;
   }
 
   @include tablet {
@@ -28,6 +29,9 @@
     background-size: cover, 465px 340px, 330px 466px;
     background-position-x: center, 510px, right;
     background-position-y: center, 105px, 0;
+    @include retina {
+      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle-tablet.svg");
+    }
   }
 
   @include mobile {
@@ -36,6 +40,9 @@
     background-size: cover, 301px 220px, auto;
     background-position-x: center, 130%, right;
     background-position-y: center, 90px, 0;
+    @include retina {
+      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle-mobile.svg");
+    }
   }
 }
 
@@ -87,7 +94,7 @@
   }
 
   @include mobile {
-    margin-top: 233px;
+    margin-top: 225px;
     padding-left: 0;
   }
 }
@@ -96,7 +103,7 @@
   @include title;
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
   color: $white;
 

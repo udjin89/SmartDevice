@@ -4,11 +4,12 @@
   background-color: $dark-grey;
 
   @include tablet {
-    padding-top: 45px;
+    padding-top: 52px;
     padding-bottom: 78px;
   }
 
   @include mobile {
+    padding-top: 48px;
     padding-bottom: 64px;
   }
 }
@@ -21,10 +22,13 @@
 .products h2 {
   @include title-low;
   color: $white;
-
+  letter-spacing: 0.2px;
+  @include tablet{
+    line-height: 140.62%;
+    letter-spacing: 0.32px;
+  }
   @include mobile {
     font-size: 28px;
-    line-height: 140.62%;
     padding-left: 10px;
     padding-top: 5px;
   }
@@ -41,7 +45,7 @@
   justify-content: center;
 
   @include tablet {
-    margin-top: 42px;
+    margin-top: 50px;
     grid-template-columns: 1fr;
     row-gap: 46px;
   }
@@ -58,7 +62,7 @@
   height: 620px;
   color: $white;
   text-decoration: none;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: "robotocondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

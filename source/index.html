@@ -11,7 +11,6 @@
   <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
   <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font">
   <link rel="preload" href="fonts/ptmono-regular.woff2" as="font">
-  <link rel="preload" href="fonts/roboto-medium.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,13 +19,11 @@
     <div class="container header__grid">
       <div class="header__top">
         <a class="header__logo logo logo--header">
-          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/icon/sprite.svg#logo"></use>
-          </svg>
-          <div class="logo__name-company logo__name-company--white">
-            <span class="logo__name">Smart Device</span>
-            <span class="logo__slogan">умные технологии</span>
-          </div>
+          <picture>
+            <source media="(max-width: 767.6px)" srcset="./img/icon/logo.svg">
+            <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+            <img src="img/logo.png" alt="Логотип компании" srcset="img/logo@2x.png 2x" width="202" height="52">
+          </picture>
         </a>
         <div class="contact">
           <a class="contact__mail" href="mailto:info@sd.ru" tabindex="0">
@@ -169,12 +166,10 @@
                 <textarea name="user-question" id="question" rows="5" placeholder="Ваш вопрос"></textarea>
                 <label for="question" class="hidden">Ваш вопрос</label>
               </div>
-
-              <button type="submit" class="button button--submit" value="Отправить">Задать вопрос</button>
-
               <input type="checkbox" name="personal-data" id="check" class="hidden" required>
-              <label for="check" class="questions__check" tabindex="0">Я согласен на обработку персональных
+              <label for="check" class="questions__check">Я согласен на обработку персональных
                 данных</label>
+              <button type="submit" class="button button--submit" value="Отправить">Задать вопрос</button>
             </div>
 
 
@@ -191,13 +186,11 @@
         <div class="footer__wrap">
 
           <a class="footer__logo logo logo--footer">
-            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use xlink:href="img/icon/sprite.svg#logo"></use>
-            </svg>
-            <div class="logo__name-company logo__name-company--grey ">
-              <span class="logo__name">Service Device</span>
-              <span class="logo__slogan">умные технологии</span>
-            </div>
+            <picture>
+              <!-- <source srcset="img/content/logo.webp 1x, img/content/logo@2x.webp 2x" type="image/webp"> -->
+              <img src="img/logo-dark.png" alt="Логотип компании" srcset="img/logo-dark@2x.png 2x" width="216"
+                height="52">
+            </picture>
           </a>
           <div class="company">1999-2018 SD Service Devices</div>
           <ul class="social">
@@ -248,8 +241,7 @@
             <h3 class="panel-active">Наш офис</h3>
             <ul class="contact-footer__list">
               <li class="contact-footer__item">
-                <a class="contact-footer__link"
-                  href="https://www.google.com/maps/place/%D0%9E%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9+%D0%BF%D1%80-%D1%82.,+10,+%D0%9C%D1%8B%D1%82%D0%B8%D1%89%D0%B8,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+141009/@55.9163844,37.7699704,17z/data=!4m5!3m4!1s0x46b531926d1a9127:0xa547787ae1be2f3d!8m2!3d55.9163844!4d37.7721591">г.
+                <a class="contact-footer__link">г.
                   Мытищи, Олимпийский проспект, д.10</a>
               </li>
               <li class="contact-footer__item">
@@ -280,12 +272,11 @@
   <!-- Modal -->
   <div class="bg-overlay hidden"></div>
   <div class="modal modal--call modal--show-x hidden">
-    <button class="button button--close" aria-label="Закрыть">
 
-    </button>
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
     <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
       <div class="modal__wrap-input">
         <label class="hidden" for="user-name">Ваше имя</label>
         <input name="user-name" type="text" placeholder="Имя" required title="Введите Имя" aria-label="name" autofocus>
@@ -299,12 +290,12 @@
         </div>
       </div>
 
-
-      <button type="submit" class="button button--submit" value="Отправить">Отправить</button>
-
       <input type="checkbox" name="check" id="modal-check" class="hidden" required>
       <label for="modal-check" class="modal__check">Я согласен на обработку персональных данных</label>
+
+      <button type="submit" class="button button--submit" value="Отправить">Отправить</button>
     </form>
+    <button class="button button--close" aria-label="Закрыть"></button>
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

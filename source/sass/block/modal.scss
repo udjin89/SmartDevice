@@ -66,7 +66,7 @@
     font-size: 16px;
     line-height: 50px;
     color: $white;
-    font-family: "PTMono", "Arial", sans-serif;
+    font-family: "ptmono-regular", "Arial", sans-serif;
     opacity: 1;
     overflow: visible;
   }
@@ -101,7 +101,7 @@
 .modal__check {
   position: relative;
   cursor: pointer;
-
+  order: 2;
   &:hover {
     opacity: 0.5;
   }
@@ -111,7 +111,10 @@
     opacity: 0.8;
   }
 }
-
+.modal input[type="checkbox"]{
+  bottom: 0;
+  right: 0;
+}
 .modal input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
@@ -127,4 +130,12 @@
   background-image: url("../img/icon/check.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+.modal input[type="checkbox"]:focus + label {
+  outline: 1px dashed $white;
+  outline-offset: 2px;
+}
+.modal form{
+  display: flex;
+  flex-direction: column;
 }

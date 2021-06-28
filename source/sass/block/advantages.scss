@@ -52,7 +52,9 @@
     }
   }
   &--special-padding{
-    padding-right: 13px;
+    @include mobile{
+      padding-right: 20px;
+    }
   }
 }
 

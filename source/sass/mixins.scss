@@ -42,7 +42,7 @@
 }
 
 @mixin standart-font {
-  font-family: "PTMono", "Arial", sans-serif;
+  font-family: "ptmono-regular", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -50,7 +50,7 @@
 }
 
 @mixin title {
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: "robotocondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   padding: 0;
@@ -58,7 +58,7 @@
 }
 
 @mixin title-low {
-  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-family: "robotocondensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   padding: 0;

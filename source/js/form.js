@@ -4,8 +4,6 @@ const inputNumberPhone = document.querySelectorAll('input[type=tel]');
 if (inputNumberPhone) {
 
   inputNumberPhone.forEach(function (item) {
-
-    console.log('start input phone');
     var options = {
       onKeyPress: function (cep, e, field, options) {
         const masks = ['+7(000) 000-00-00'];

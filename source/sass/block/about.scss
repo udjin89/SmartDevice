@@ -1,10 +1,10 @@
 .about {
   position: relative;
-  margin-top: 100px;
+  margin-top: 104px;
   padding-bottom: 110px;
 
   @include tablet {
-    margin-top: 65px;
+    margin-top: 53px;
     padding-bottom: 82px;
   }
 
@@ -32,7 +32,9 @@
   @include title-low;
   color: $grey;
   margin-bottom: 22px;
-
+  @include tablet{
+    margin-bottom: 26px;
+  }
   @include mobile {
     margin-bottom: 18px;
   }
@@ -64,6 +66,7 @@
     -webkit-box-orient: vertical;
     /* stylelint-enable */
     // margin-top: 20px;
+    padding-right: 5px;
   }
 
   @include mobile {
@@ -73,6 +76,7 @@
       min-width: 100%;
       margin-top: 40px;
       -webkit-line-clamp: 8;
+      padding-right: 0;
     }
   }
 }

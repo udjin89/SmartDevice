@@ -3,7 +3,7 @@
   background-color: $blue;
   background-image: url("../img/background/plane.png"), url("../img/background/triangle.svg");
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
+  background-size: 511px 288px, auto;
   background-position-x: 25%, 14%;
   background-position-y: 160px, -60px;
 
@@ -17,6 +17,7 @@
 
   @include retina {
     background-image: url("../img/background/plane@2x.png"), url("../img/background/triangle.svg");
+    // background-size: 511px 288px, auto;
   }
 
   @include tablet {
@@ -74,6 +75,7 @@
 .questions__grid h2 {
   @include title-low;
   color: $white;
+  letter-spacing: 0.2px;
 
   @include mobile {
     font-size: 28px;
@@ -108,7 +110,7 @@
     font-size: 16px;
     line-height: 50px;
     color: $white;
-    font-family: "PTMono", "Arial", sans-serif;
+    font-family: "ptmono-regular", "Arial", sans-serif;
     opacity: 1;
     overflow: visible;
   }
@@ -169,11 +171,11 @@
   opacity: 0.8;
   padding-left: 40px;
   margin-top: 11px;
+  order: 2;
 
   &:hover {
     opacity: 0.5;
   }
-
   &:active {
     color: $green;
     opacity: 0.8;
@@ -188,21 +190,28 @@
     padding-left: 35px;
   }
 }
+.questions input[type="checkbox"]{
+  bottom: 0;
+  right: 0;
+}
+.questions input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid $white;
+  color: $white;
+  background-image: none;
+}
 
-// .questions__form input[type="checkbox"] + label::before {
-//   content: "";
-//   position: absolute;
-//   left: 8px;
-//   top: 2px;
-//   width: 16px;
-//   height: 16px;
-//   border: 1px solid $white;
-//   color: $white;
-//   background-image: none;
-// }
-
-// .questions__form input[type="checkbox"]:checked + label::before {
-//   background-image: url("../img/icon/check.svg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
+.questions input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/icon/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.questions input[type="checkbox"]:focus + label{
+  outline: 1px dashed $white;
+  outline-offset: 2px;
+}
