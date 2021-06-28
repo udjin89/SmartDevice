@@ -110,7 +110,7 @@ html {
   position: relative;
   min-height: 878px;
   background-color: #1b2d37;
-  background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle.svg");
+  background-image: url("../img/background/header.png"), url("../img/background/sheme.webp"), url("../img/background/triangle.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: cover, auto, auto;
   background-position-x: center, 1030px, 82%;
@@ -123,29 +123,29 @@ html {
       background-position-x: center, 750px, 82%; } }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .header {
-      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
+      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle.svg");
       background-size: cover, 36.8%, auto; } }
   @media screen and (max-width: 1023.33px) {
     .header {
       min-height: 0;
       padding-bottom: 160px;
-      background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-tablet.svg");
+      background-image: url("../img/background/header.png"), url("../img/background/sheme.webp"), url("../img/background/triangle-tablet.svg");
       background-size: cover, 465px 340px, 330px 466px;
       background-position-x: center, 510px, right;
       background-position-y: center, 105px, 0; } }
   @media screen and (max-width: 1023.33px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 1023.33px) and (min-resolution: 2dppx) {
     .header {
-      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle-tablet.svg"); } }
+      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle-tablet.svg"); } }
   @media screen and (max-width: 767.66px) {
     .header {
       padding-bottom: 73px;
-      background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-mobile.svg");
+      background-image: url("../img/background/header.png"), url("../img/background/sheme.webp"), url("../img/background/triangle-mobile.svg");
       background-size: cover, 301px 220px, auto;
       background-position-x: center, 130%, right;
       background-position-y: center, 90px, 0; } }
   @media screen and (max-width: 767.66px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.66px) and (min-resolution: 2dppx) {
     .header {
-      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle-mobile.svg"); } }
+      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle-mobile.svg"); } }
 
 .header__grid {
   display: grid;

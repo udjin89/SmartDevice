@@ -3,7 +3,7 @@
   min-height: 878px;
   background-color: $dark-grey;
 
-  background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle.svg");
+  background-image: url("../img/background/header.png"), url("../img/background/sheme.webp"), url("../img/background/triangle.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: cover, auto, auto;
   background-position-x: center, 1030px, 82%;
@@ -18,30 +18,30 @@
   }
 
   @include retina {
-    background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
+    background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle.svg");
     background-size: cover, 36.8%, auto;
   }
 
   @include tablet {
     min-height: 0;
     padding-bottom: 160px;
-    background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-tablet.svg");
+    background-image: url("../img/background/header.png"), url("../img/background/sheme.webp"), url("../img/background/triangle-tablet.svg");
     background-size: cover, 465px 340px, 330px 466px;
     background-position-x: center, 510px, right;
     background-position-y: center, 105px, 0;
     @include retina {
-      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle-tablet.svg");
+      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle-tablet.svg");
     }
   }
 
   @include mobile {
     padding-bottom: 73px;
-    background-image: url("../img/background/header.png"), url("../img/background/sheme.png"), url("../img/background/triangle-mobile.svg");
+    background-image: url("../img/background/header.png"), url("../img/background/sheme.webp"), url("../img/background/triangle-mobile.svg");
     background-size: cover, 301px 220px, auto;
     background-position-x: center, 130%, right;
     background-position-y: center, 90px, 0;
     @include retina {
-      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.png"), url("../img/background/triangle-mobile.svg");
+      background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle-mobile.svg");
     }
   }
 }
