@@ -21,9 +21,8 @@
   padding: 0;
   list-style: none;
 
-  @include mobile{
+  @include mobile {
     padding-right: 10px;
-
   }
 }
 
@@ -42,13 +41,15 @@
     opacity: 0.7;
   }
 }
-.contact-footer__address{
+
+.contact-footer__address {
   font-size: 15px;
   line-height: 25px;
   color: $dark-grey;
   text-decoration: none;
   opacity: 0.5;
 }
+
 .contact-footer h3 {
   @include title;
 

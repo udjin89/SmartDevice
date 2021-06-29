@@ -11,13 +11,16 @@
   border-radius: 5px;
   padding: 14px 26px;
   cursor: pointer;
-  // @include focus;
 }
 
 .button--contact {
   font-size: 14px;
   line-height: 16px;
   margin-left: 52px;
+  display: block;
+  height: 45px;
+  align-self: center;
+  min-width: 180px;
 
   @include tablet {
     display: none;

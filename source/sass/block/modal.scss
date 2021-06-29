@@ -102,6 +102,7 @@
   position: relative;
   cursor: pointer;
   order: 2;
+
   &:hover {
     opacity: 0.5;
   }
@@ -111,10 +112,12 @@
     opacity: 0.8;
   }
 }
-.modal input[type="checkbox"]{
+
+.modal input[type="checkbox"] {
   bottom: 0;
   right: 0;
 }
+
 .modal input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
@@ -131,11 +134,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .modal input[type="checkbox"]:focus + label {
   outline: 1px dashed $white;
   outline-offset: 2px;
 }
-.modal form{
+
+.modal form {
   display: flex;
   flex-direction: column;
 }

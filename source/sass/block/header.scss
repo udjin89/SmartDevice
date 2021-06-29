@@ -29,6 +29,7 @@
     background-size: cover, 465px 340px, 330px 466px;
     background-position-x: center, 510px, right;
     background-position-y: center, 105px, 0;
+
     @include retina {
       background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle-tablet.svg");
     }
@@ -40,6 +41,7 @@
     background-size: cover, 301px 220px, auto;
     background-position-x: center, 130%, right;
     background-position-y: center, 90px, 0;
+
     @include retina {
       background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle-mobile.svg");
     }
@@ -55,6 +57,7 @@
 .header__top {
   margin-top: 33px;
   display: flex;
+  // column-gap: 20px;
   justify-content: space-between;
 
   @include tablet {
@@ -72,21 +75,7 @@
   grid-row-start: 2;
   grid-row-end: 3;
   height: 564px;
-  // height: fit-content;
-  // background-image: url("../img/background/sheme.png"), url("../img/background/triangle.svg");
-  // background-position: 110% top, right top;
-  // background-repeat: no-repeat, no-repeat;
-  // @include retina {
-  //   background-image: url("../img/background/sheme@2x.png"), url("../img/background/triangle.svg");
-  // }
-  // @include tablet {
-  //   min-height: 0;
-  //   background-size: 100%;
-  // }
 
-  // @include mobile {
-  //   background-size: 100%;
-  // }
   @include tablet {
     height: auto;
     margin-top: 114px;

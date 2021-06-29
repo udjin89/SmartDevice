@@ -17,7 +17,6 @@
 
   @include retina {
     background-image: url("../img/background/plane@2x.png"), url("../img/background/triangle.svg");
-    // background-size: 511px 288px, auto;
   }
 
   @include tablet {
@@ -176,6 +175,7 @@
   &:hover {
     opacity: 0.5;
   }
+
   &:active {
     color: $green;
     opacity: 0.8;
@@ -190,10 +190,20 @@
     padding-left: 35px;
   }
 }
-.questions input[type="checkbox"]{
+
+.questions input[type="checkbox"] {
   bottom: 0;
-  right: 0;
+  right: 25%;
+
+  @include tablet {
+    right: 30%;
+  }
+
+  @include mobile {
+    right: 50%;
+  }
 }
+
 .questions input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
@@ -211,7 +221,8 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.questions input[type="checkbox"]:focus + label{
+
+.questions input[type="checkbox"]:focus + label {
   outline: 1px dashed $white;
   outline-offset: 2px;
 }

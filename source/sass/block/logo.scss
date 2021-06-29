@@ -1,10 +1,17 @@
 .logo {
   display: flex;
   flex-wrap: wrap;
+
+  &--header {
+    margin-right: 20px;
+  }
 }
 
 .logo--header img {
+  min-width: 202px;
+
   @include mobile {
+    min-width: 38px;
     width: 38px;
     height: 38px;
   }

@@ -32,9 +32,11 @@
   @include title-low;
   color: $grey;
   margin-bottom: 22px;
-  @include tablet{
+
+  @include tablet {
     margin-bottom: 26px;
   }
+
   @include mobile {
     margin-bottom: 18px;
   }
@@ -51,22 +53,19 @@
     margin-bottom: 19px;
     padding-left: 2px;
     overflow: hidden;
-  }
 
-  &:last-of-type {
-    // white-space: pre;
-    text-overflow: ellipsis;
-    min-width: 532px;
-    padding-right: 0;
-    // height: 80px;
-    overflow: hidden;
-    /* stylelint-disable */
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    /* stylelint-enable */
-    // margin-top: 20px;
-    padding-right: 5px;
+    &:last-of-type {
+
+      text-overflow: ellipsis;
+      min-width: 532px;
+      overflow: hidden;
+      /* stylelint-disable */
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      /* stylelint-enable */
+      padding-right: 5px;
+    }
   }
 
   @include mobile {
@@ -120,12 +119,15 @@
   /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
   background-clip: text;
   transform: rotate(-90deg);
+  overflow: hidden;
+  max-width: 310px;
 
   @include tablet {
     top: 55px;
     left: -85px;
     font-size: 178.324px;
     line-height: 251px;
+    max-width: 350px;
   }
 
   @include mobile {
