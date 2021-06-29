@@ -90,21 +90,21 @@ html {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/ptmono-regular.woff2") format("woff2"), url("../fonts/ptmono-regular.woff") format("woff"); }
+  src: url("../fonts/ptmono-regular1.woff2") format("woff2"), url("../fonts/ptmono-regular1.woff") format("woff"); }
 
 @font-face {
   font-family: "robotocondensed";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/robotocondensed-bold.woff2") format("woff2"), url("../fonts/robotocondensed-bold.woff") format("woff"); }
+  src: url("../fonts/robotocondensed-bold1.woff2") format("woff2"), url("../fonts/robotocondensed-bold1.woff") format("woff"); }
 
 @font-face {
   font-family: "robotocondensed";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/robotocondensed-regular.woff2") format("woff2"), url("../fonts/robotocondensed-regular.woff") format("woff"); }
+  src: url("../fonts/robotocondensed-regular1.woff2") format("woff2"), url("../fonts/robotocondensed-regular1.woff") format("woff"); }
 
 .header {
   position: relative;
@@ -112,7 +112,7 @@ html {
   background-color: #1b2d37;
   background-image: url("../img/background/header.png"), url("../img/background/sheme.webp"), url("../img/background/triangle.svg");
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: cover, auto, auto;
+  background-size: cover, 705px 515px, auto;
   background-position-x: center, 1030px, 82%;
   background-position-y: center, 260px, 50%; }
   @media screen and (max-width: 1440px) {
@@ -124,7 +124,7 @@ html {
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .header {
       background-image: url("../img/background/header@2x.png"), url("../img/background/sheme@2x.webp"), url("../img/background/triangle.svg");
-      background-size: cover, 36.8%, auto; } }
+      background-size: cover, 705px 515px, auto; } }
   @media screen and (max-width: 1023.33px) {
     .header {
       min-height: 0;
@@ -528,6 +528,13 @@ html {
     opacity: 1; }
   .contact-footer__link:active {
     opacity: 0.7; }
+
+.contact-footer__address {
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  text-decoration: none;
+  opacity: 0.5; }
 
 .contact-footer h3 {
   font-family: "robotocondensed", "Arial", sans-serif;
