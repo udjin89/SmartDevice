@@ -30,13 +30,12 @@ if (inputNumberPhone) {
         const masks = ['+7(000) 000-00-00'];
         $(item).mask(masks, options);
       }
-
     };
+
     $(item).mask('+7(000) 000-00-00', options);
   });
   inputNumberPhone.forEach(function (item) {
     item.addEventListener('focus', function (item) {
-
       item.value = '+7(';
     });
   });
@@ -103,7 +102,6 @@ if (links) {
     link.addEventListener('click', function (evt) {
       evt.preventDefault();
       const id = link.getAttribute('href');
-      // closeMenu();
       document.querySelector(id).scrollIntoView({
         behavior: 'smooth',
         block: 'start'

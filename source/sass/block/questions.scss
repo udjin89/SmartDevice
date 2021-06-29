@@ -214,6 +214,14 @@
   border: 1px solid $white;
   color: $white;
   background-image: none;
+
+  @include tablet {
+    left: 7px;
+  }
+
+  @include mobile {
+    left: 2px;
+  }
 }
 
 .questions input[type="checkbox"]:checked + label::before {

@@ -1286,6 +1286,12 @@ html {
   border: 1px solid #ffffff;
   color: #ffffff;
   background-image: none; }
+  @media screen and (max-width: 1023.33px) {
+    .questions input[type="checkbox"] + label::before {
+      left: 7px; } }
+  @media screen and (max-width: 767.66px) {
+    .questions input[type="checkbox"] + label::before {
+      left: 2px; } }
 
 .questions input[type="checkbox"]:checked + label::before {
   background-image: url("../img/icon/check.svg");

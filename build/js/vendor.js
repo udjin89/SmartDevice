@@ -11024,24 +11024,31 @@
         var maskChunks = [], translation, pattern, optional, recursive, oRecursive, r;
 
         for (var i = 0; i < mask.length; i++) {
-          translation = jMask.translation[mask.charAt(i)];
-
-          if (translation) {
-
-            pattern = translation.pattern.toString().replace(/.{1}$|^.{1}/g, '');
-            optional = translation.optional;
-            recursive = translation.recursive;
-
-            if (recursive) {
-              maskChunks.push(mask.charAt(i));
-              oRecursive = { digit: mask.charAt(i), pattern: pattern };
-            } else {
-              maskChunks.push(!optional && !recursive ? pattern : (pattern + '?'));
-            }
-
-          } else {
-            maskChunks.push(mask.charAt(i).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'));
+          try {
+            translation = jMask.translation[mask.charAt(i)];
           }
+          catch {
+
+          }
+          finally {
+            if (translation) {
+
+              pattern = translation.pattern.toString().replace(/.{1}$|^.{1}/g, '');
+              optional = translation.optional;
+              recursive = translation.recursive;
+
+              if (recursive) {
+                maskChunks.push(mask.charAt(i));
+                oRecursive = { digit: mask.charAt(i), pattern: pattern };
+              } else {
+                maskChunks.push(!optional && !recursive ? pattern : (pattern + '?'));
+              }
+
+            } else {
+              maskChunks.push(mask.charAt(i).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'));
+            }
+          }
+
         }
 
         r = maskChunks.join('');
