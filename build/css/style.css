@@ -1100,7 +1100,8 @@ html {
   background-position-y: 160px, -60px; }
   @media screen and (max-width: 1440px) {
     .questions {
-      background-position-x: -10px, 0; } }
+      background-position-x: -10px, 0;
+      background-size: 40%;} }
   @media screen and (max-width: 1200px) {
     .questions {
       background-position-x: -200px, 0; } }
@@ -1186,6 +1187,7 @@ html {
 .questions input,
 .questions textarea {
   display: block;
+  border-radius: 0;
   height: 50px;
   line-height: 50px;
   padding-left: 17px;
